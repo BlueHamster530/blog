@@ -61,7 +61,7 @@ source: "https://bluehamster.tistory.com/26"
 
 5가 0일때 3으로 나누어도 나머지가 존재 한다면 -1 출력.
 
-```
+```csharp
 public class Canvas
 {
     public static void Main(string[] args)
@@ -119,7 +119,7 @@ AI 잼미니 개선 버전
 
 만약 해를 찾았는지 여부를 나타내는 **boolean 플래그 변수**를 사용하거나, **결과 변수의 초기값을 -1**로 두면 의도가 더 명확해집니다.
 
-```
+```csharp
 using System;
 
 public class Program

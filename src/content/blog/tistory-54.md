@@ -24,7 +24,7 @@ Node.js와 TypeScript로 백엔드 개발을 공부하다 보면 디버깅 환�
 
 프로젝트의 .vscode/launch.json 파일에 아래 내용을 그대로 복사해서 사용하시면 됩니다.
 
-```
+```json
 {
   "version": "0.2.0",
   "configurations": [

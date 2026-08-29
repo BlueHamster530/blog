@@ -15,7 +15,7 @@ source: "https://bluehamster.tistory.com/70"
 
 구글링을 통해 "S3 전체 공개 정책"을 검색하면 아래와 같은 JSON 코드를 발견하게 되는데요.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

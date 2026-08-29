@@ -29,7 +29,7 @@ Error: Token not provided
 
 가장 흔히 하는 실수는 최상위 폴더(예: 홈 디렉터리)에서 아래와 같이 PM2를 실행하는 것입니다.
 
-```
+```bash
 # 최상위 폴더에서 당당하게 실행!
 pm2 start assmbly_job_alert_bot/assmbly_job.js
 ```
@@ -55,7 +55,7 @@ graph TD
 
 가장 직관적인 해결책은 PM2에게 "이 프로세스의 작업 기준 폴더(Current Working Directory)는 저 하위 폴더야!"라고 명시해 주는 것입니다. --cwd 옵션을 사용하면 됩니다.
 
-```
+```bash
 # assmbly 봇 실행 (경로 강제 지정)
 pm2 start assmbly_job_alert_bot/assmbly_job.js --name "assmbly" --cwd ./assmbly_job_alert_bot
 
@@ -73,7 +73,7 @@ pm2 start narajob_alert_bot/narajob.js --name "narajob" --cwd ./narajob_alert_bo
 
 우리의 정신 건강과 퇴근 시간을 지키기 위해, **최상위 폴더에 ecosystem.config.js 설정 파일 하나를 만들어 중앙 통제실을 구축**하는 것이 좋습니다.
 
-```
+```javascript
 // 최상위 폴더에 ecosystem.config.js 생성
 module.exports = {
   apps: [
@@ -103,7 +103,7 @@ module.exports = {
 
 이제 최상위 폴더에서 마법의 명령어 하나만 입력하면 됩니다.
 
-```
+```bash
 pm2 start ecosystem.config.js
 ```
 

@@ -75,11 +75,11 @@ graph TD
 
 Bull 라이브러리를 사용하면 이 복잡해 보이는 과정을 아주 우아하게 처리할 수 있습니다. (Redis 서버가 미리 설치되어 실행 중이어야 합니다!)
 
-```
+```bash
 $ npm install bull
 ```
 
-```
+```javascript
 // queue.js (작업 큐 설정 파일)
 const Queue = require('bull');
 
@@ -101,7 +101,7 @@ module.exports = mailQueue;
 
 이제 작업을 스케줄링해 볼까요? Bull에는 자체적으로 Cron 문법을 지원하는 repeat 옵션이 있습니다.
 
-```
+```javascript
 // app.js (Express 메인 서버)
 const express = require('express');
 const mailQueue = require('./queue');

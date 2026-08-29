@@ -42,7 +42,7 @@ Mocking을 사용하면 다음과 같은 이점이 있습니다.
 
 Jest에서 가장 기본이 되는 Mock 함수 생성 도구입니다. 이 가짜 함수는 자신이 몇 번 호출되었는지, 어떤 인자와 함께 호출되었는지를 기억합니다.
 
-```
+```javascript
 // 1. 가짜 함수 생성
 const mockFn = jest.fn();
 
@@ -59,7 +59,7 @@ test('가짜 함수 기록 검증', () => {
 
 단순히 호출 기록만 보는 것이 아니라, 결과값을 내 마음대로 조작할 수도 있습니다.
 
-```
+```javascript
 mockFn.mockReturnValue(100); // 호출되면 무조건 100을 반환해라
 console.log(mockFn()); // 100
 ```
@@ -76,7 +76,7 @@ console.log(mockFn()); // 100
 
 emailClient.js (외부 의존성)
 
-```
+```javascript
 module.exports = {
   sendEmail: (to, text) => {
     // 실제로는 외부 메일 서버와 통신하는 복잡하고 느린 로직
@@ -88,7 +88,7 @@ module.exports = {
 
 userService.js (테스트 대상)
 
-```
+```javascript
 const emailClient = require('./emailClient');
 
 const sendWelcome = (email) => {
@@ -106,7 +106,7 @@ module.exports = { sendWelcome };
 
 userService.test.js
 
-```
+```javascript
 const userService = require('./userService');
 const emailClient = require('./emailClient');
 
@@ -143,7 +143,7 @@ describe('유저 서비스 테스트', () => {
 
 2편에서 다룬 비동기 함수를 Mocking 할 때는 mockReturnValue 대신 mockResolvedValue를 사용해야 합니다. Promise가 해결(resolve)된 값을 반환한다고 명시하는 것입니다.
 
-```
+```javascript
 // DB에서 유저를 조회하는 함수를 가짜로 만들 때
 userRepository.findById.mockResolvedValue({ 
   id: 1, 

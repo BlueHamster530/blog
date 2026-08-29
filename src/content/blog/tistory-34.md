@@ -38,7 +38,7 @@ app.use()는 Express의 핵심 기능인 **미들웨어(Middleware)** 를 애플
 
 JavaScript
 
-```
+```javascript
 const express = require('express');
 const app = express();
 
@@ -91,7 +91,7 @@ app.all()은 app.get(), app.post()와 같은 **라우팅 메소드** 중 하나�
 
 JavaScript
 
-```
+```javascript
 const express = require('express');
 const app = express();
 

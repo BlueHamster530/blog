@@ -45,7 +45,7 @@ microsoft/vscode 저장소의 **'Issues'** 탭을 확인합니다. 여기서 다
 
 내 컴퓨터(로컬)에서 작업하기 위해, **내가 Fork한 저장소**를 git clone 명령어로 내려받습니다.
 
-```
+```bash
 # 주의: 원본(microsoft)이 아닌 내 저장소(my-username)를 클론합니다.
 git clone https://github.com/my-username/vscode.git
 cd vscode
@@ -53,7 +53,7 @@ cd vscode
 
 그다음, **내 작업 전용 브랜치**를 새로 만듭니다. 이는 원본의 main 브랜치와 내 작업 내용을 **격리**하여 깔끔하게 관리하기 위함이며, 오픈소스 협업의 필수적인 습관입니다.
 
-```
+```bash
 # 'fix-login-bug'라는 이름의 새 브랜치를 만들고 그 브랜치로 이동합니다.
 git checkout -b fix-login-bug
 ```
@@ -64,7 +64,7 @@ git checkout -b fix-login-bug
 
 수정이 완료되면, 변경 사항을 '스테이징(Staging)'하고 '커밋(Commit)'하여 로컬 저장소에 기록을 남깁니다.
 
-```
+```bash
 git add .
 # (#12345는 1단계에서 확인한 이슈 번호이며, 연결해두면 관리가 편함)
 git commit -m "Fix: 로그인 시 발생하는 500 에러 수정 (#12345)"
@@ -74,7 +74,7 @@ git commit -m "Fix: 로그인 시 발생하는 500 에러 수정 (#12345)"
 
 로컬에 커밋한 내용을 **내 GitHub Fork 저장소**로 밀어 올립니다(push).
 
-```
+```bash
 # 'origin'은 기본적으로 내가 클론한 'my-username/vscode'를 가리킵니다.
 git push origin fix-login-bug
 ```

@@ -60,7 +60,7 @@ N개의 정수가 주어지면, 이 정수들의 합 S의 부호를 구하는 �
 
 위 내용을 풀기위해 간단하게 해결을 하려고 하였으나
 
-```
+```csharp
 public class Canvas
 {
     public static void Main(string[] args)
@@ -105,7 +105,7 @@ public class Canvas
 
 이러한 개선을 통해 코드는 더 **메모리 효율적**이고 **실행 속도**도 빨라집니다. 특히, 입력되는 숫자의 개수(n)가 매우 클 경우, BigInteger[] 배열을 만드는 것은 상당한 메모리 부담이 될 수 있으므로 이러한 방식은 매우 중요합니다.
 
-```
+```csharp
 using System;
 using System.Numerics;
 

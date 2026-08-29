@@ -44,7 +44,7 @@ N+1 문제는 Prisma, TypeORM, JPA 등 ORM(Object-Relational Mapping)을 사용�
 
 ### ❌ 나쁜 예: 지연 로딩(Lazy Loading)의 함정
 
-```
+```javascript
 // 1. 먼저 DB에서 사용자 10명을 조회합니다. (1번의 쿼리 발생)
 // SELECT * FROM User LIMIT 10;
 const users = await prisma.user.findMany({ take: 10 });
@@ -73,7 +73,7 @@ ORM은 기본적으로 메모리를 아끼고 효율적으로 동작하기 위�
 
 ### ✅ 좋은 예: Prisma include 활용하기
 
-```
+```javascript
 // "사용자 가져올 때, 이 사용자가 작성한 글도 한 번에 다 묶어서(JOIN) 가져와 줘!"
 const usersWithPosts = await prisma.user.findMany({
   take: 10,

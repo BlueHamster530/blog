@@ -38,7 +38,7 @@ Jest에게 이 테스트가 비동기 작업임을 알려주지 않으면, Jest�
 
 과거에는 콜백 함수를 많이 사용했습니다. Jest는 test 함수의 인자로 done이라는 콜백을 제공합니다. 비동기 로직이 끝나는 시점에 done()을 직접 호출해주면, Jest는 그때까지 테스트 종료를 기다립니다.
 
-```
+```javascript
 test('3초 후에 데이터를 받아온다', (done) => {
   setTimeout(() => {
     try {
@@ -59,7 +59,7 @@ test('3초 후에 데이터를 받아온다', (done) => {
 
 가짜 데이터베이스 조회 함수를 만들어서 테스트해 보겠습니다.
 
-```
+```javascript
 // 가짜 DB 조회 함수
 const fetchUser = (id) => {
   return new Promise((resolve) => {
@@ -95,7 +95,7 @@ Jest는 테스트 실행 전후에 공통된 작업을 처리할 수 있도록 �
 - **beforeEach**: 각 테스트(it, test)가 실행되기 직전에 매번 실행됩니다. (예: 테스트 데이터 생성, 변수 초기화)
 - **afterEach**: 각 테스트가 끝난 직후 매번 실행됩니다. (예: 테스트 데이터 삭제/롤백)
 
-```
+```javascript
 describe('데이터베이스 관련 테스트', () => {
   beforeAll(() => {
     console.log('DB에 연결합니다.');
@@ -132,7 +132,7 @@ describe('데이터베이스 관련 테스트', () => {
 3. **Assertion (검증/Assert):** 실행 결과가 기대한 값과 일치하는지 확인합니다.
 4. **Teardown (정리):** (선택) 테스트로 인해 변경된 상태를 원래대로 되돌립니다.
 
-```
+```javascript
 test('유저의 나이를 수정할 수 있다', () => {
   // 1. Setup (준비)
   const user = { id: 1, name: '영희', age: 20 };

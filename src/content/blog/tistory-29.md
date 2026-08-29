@@ -14,7 +14,7 @@ thumbnail: "/blog/images/tistory-29/img1.png"
 
 출력값이 Promise { <pending> } 으로 표시되었습니다.
 
-```
+```bash
 export async function getArticle(articleId) {
   return fetch(`-------------------`)
     .then((res) => {
@@ -47,7 +47,7 @@ res.json이 Promise 객체이기에 body 에 할당 하고 body를 바로 출력
 
 따라서 then 체인을 한번 더 사용하여 res.json이 반환한 Promise가 완전히 이행(resolve)될 때까지 기다렸다가 그 결과값을 사용해야합니다.
 
-```
+```javascript
 fetch('------------------------')
   .then(res => {
     // 첫 번째 .then 에서는 Response 객체를 받습니다.
@@ -75,7 +75,7 @@ fetch('------------------------')
 async / await 코드를 활용하는 것이 좋습니다.  
 (async 사용시 await를 사용하여 비동기 작업을 처리하고 에러 처리를 위해 try...catch문 필히 사용)
 
-```
+```bash
 export async function getArticle(articleId) {
   try {
     // 1. await를 사용해 fetch Promise가 완료되고 Response 객체를 받을 때까지 기다립니다.

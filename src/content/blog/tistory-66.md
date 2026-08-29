@@ -74,7 +74,7 @@ thumbnail: "/blog/images/tistory-66/img1.png"
 
 ### 1) Controller (주문 받기)
 
-```
+```csharp
 @RestController
 @RequestMapping("/api/users")
 @RequiredArgsConstructor
@@ -97,7 +97,7 @@ public class UserController {
 
 ### 2) Service (요리 하기)
 
-```
+```csharp
 @Service
 @RequiredArgsConstructor
 public class UserService {

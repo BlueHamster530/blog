@@ -26,7 +26,7 @@ thumbnail: "/blog/images/tistory-77/img1.jpg"
 
 이 진동벨이 바로 자바스크립트의 Promise(약속)입니다. "지금 당장 커피(결과)를 줄 수는 없지만, 다 만들어지면 꼭 알려줄게!"라는 굳은 약속인 셈입니다. 이 진동벨(Promise)은 다음 3가지 상태 중 하나를 가집니다.
 
-```
+```javascript
 stateDiagram-v2
     [*] --> Pending : 주문 완료 (진동벨 받음)
     Pending --> Fulfilled : 커피 완성 (위이잉~)
@@ -47,7 +47,7 @@ Node.js는 싱글 스레드입니다. 요리사가 한 명뿐인 식당과 같�
 
 이 비동기 결과를 받기 위해 예전에는 .then()과 .catch()를 꼬리 물기 하듯 연결해 썼지만, 코드가 길어지면 가독성이 떨어집니다. 그래서 우리가 흔히 쓰는 동기 코드처럼 예쁘고 깔끔하게 쓰기 위해 등장한 문법이 바로 async / await입니다.
 
-```
+```javascript
 // 유저 정보를 DB에서 가져오는 가상의 비동기 함수
 async function getUserProfile(userId) {
   try {
@@ -76,7 +76,7 @@ async function getUserProfile(userId) {
 
 이때 등장하는 구원투수가 바로 여러 개의 Promise를 배열로 받아 **병렬(동시)에 실행**시키는 Promise.all입니다!
 
-```
+```javascript
 async function loadDashboard() {
   try {
     // 세 가지 작업을 동시에 출발시킵니다! (속도 대폭 향상)

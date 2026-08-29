@@ -47,7 +47,7 @@ bluehamster.tistory.com](https://bluehamster.tistory.com/47)
 
 아래 코드를 복사하여 Program.cs에 붙여넣으세요. 상단의 **[설정값]** 부분에서 본인 모니터와 취향에 맞는 수치를 입력하면 됩니다.
 
-```
+```csharp
 using System;
 using System.Runtime.InteropServices;
 using NvAPIWrapper;

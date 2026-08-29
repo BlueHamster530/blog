@@ -36,7 +36,7 @@ source: "https://bluehamster.tistory.com/23"
 
 x 축과 y축 각각 최소거리를 구한 후 둘 중 더 낮은 수가 정답.
 
-```
+```csharp
 public class Canvas
 {
     public static void Main(string[] args)
@@ -80,7 +80,7 @@ public class Canvas
 
 다음은 위 개선 사항을 적용한 코드입니다.
 
-```
+```csharp
 using System;
 using System.Linq; // Split().Select()를 위해 추가
 

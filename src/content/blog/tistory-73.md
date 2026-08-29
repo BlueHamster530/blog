@@ -26,7 +26,7 @@ thumbnail: "/blog/images/tistory-73/img1.png"
 
 사건은 약 20년 전 평화로운 근무 시간에 발생했습니다. 회원 관련 테이블에 데이터 업데이트가 필요했던 기술사님은 별생각 없이 운영 중인 DB에 아래와 같은 쿼리를 날렸습니다.
 
-```
+```sql
 -- 등줄기에 땀을 흐르게 한 바로 그 쿼리 (예시)
 UPDATE user_info 
 SET status = 'ACTIVE'; 

@@ -38,7 +38,7 @@ Express에서 미들웨어 함수는 기본적으로 세 가지 인자를 받습
 
 **req (Request):** 클라이언트의 요청 정보가 담긴 객체 **res (Response):** 클라이언트에게 응답을 보내기 위한 객체 **next:** 다음 미들웨어 함수를 실행시키기 위한 콜백 함수
 
-```
+```javascript
 const myMiddleware = (req, res, next) => {
   // 1. 필요한 작업을 수행
   console.log('미들웨어 동작!');

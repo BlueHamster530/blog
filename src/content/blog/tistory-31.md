@@ -77,7 +77,7 @@ Y M 90
 
  +1를 하는 이유 : 1초라도 통화를 했다면 기본 요금이 나오기도 하기 때문
 
-```
+```csharp
 public class Canvas
 {
     public static int totalYMoney(int[] values)
@@ -158,7 +158,7 @@ public class Canvas
 2. **간결한 입력 처리 (LINQ 사용)**: C#의 Array.ConvertAll 이나 LINQ의 Select를 사용하면 문자열 배열을 정수 배열로 변환하는 for 반복문을 한 줄로 줄일 수 있습니다.
 3. C#
 
-   ```
+   ```csharp
    // 기존 코드
    string[] calltimestring = Console.ReadLine().Split(' ');
    int[] calltimes = new int[calltimestring.Length];
@@ -179,7 +179,7 @@ public class Canvas
 
 C#
 
-```
+```csharp
 using System;
 
 public class Program // 클래스 이름을 더 일반적인 Program으로 변경

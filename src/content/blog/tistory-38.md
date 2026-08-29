@@ -36,7 +36,7 @@ app.js
 
 **app.js (메인 파일)**
 
-```
+```javascript
 const express = require('express');
 const app = express();
 const userRouter = require('./routes/userRouter');
@@ -51,7 +51,7 @@ app.listen(3000, () => {
 
 **routes/userRouter.js (부모 라우터)**
 
-```
+```javascript
 const express = require('express');
 const router = express.Router();
 const postRouter = require('./postRouter');
@@ -64,7 +64,7 @@ module.exports = router;
 
 **routes/postRouter.js (자식 라우터 - ❌ 문제 발생)**
 
-```
+```javascript
 const express = require('express');
 
 // ❗ 기본 옵션으로 라우터 생성
@@ -108,7 +108,7 @@ Express에서 express.Router()로 생성된 라우터는 기본적으로 **독�
 
 JavaScript
 
-```
+```javascript
 const express = require('express');
 
 // ❗ mergeParams: true 옵션을 추가!

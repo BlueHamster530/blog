@@ -93,7 +93,7 @@ thumbnail: "/blog/images/tistory-57/img1.png"
 
 웹 브라우저에서는 기본적으로 WebSocket API를 제공합니다.
 
-```
+```javascript
 // 1. 소켓 연결 생성
 const socket = new WebSocket("ws://localhost:8080");
 
@@ -120,7 +120,7 @@ Node.js 환경에서 웹소켓 서버를 구현할 때 자주 마주치는 패�
 
 - 특정 이벤트(message, close 등)가 발생하면 등록된 함수(리스너)를 실행하는 구조입니다.
 
-```
+```javascript
 import { EventEmitter } from 'events';
 
 const myEmitter = new EventEmitter();

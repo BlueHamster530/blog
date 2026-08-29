@@ -99,7 +99,7 @@ HTTP 요청의 **헤더**에 값을 넣어 보내는 방식입니다. 주로 데
 
 예를 들어, 앞선 예시에서 이런 응답 Body를 받았다고 가정해 봅시다.
 
-```
+```json
 {
   "calculatedDamage_300": 150000,
   "calculatedDamage_380": 145000,
@@ -118,7 +118,7 @@ calculatedDamage 값이 \_300, \_380처럼 키 이름에 붙어있습니다. 당
 
 JSON
 
-```
+```json
 {
   "calculatedDamage": {
     "300": 150000,
@@ -133,7 +133,7 @@ JSON
 
 JSON
 
-```
+```json
 {
   "info300": {
     "calculatedDamage": 150000,

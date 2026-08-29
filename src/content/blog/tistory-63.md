@@ -70,7 +70,7 @@ All files         |   85.71 |       50 |     100 |   85.71 |
 
 간단한 예시를 들어보겠습니다.
 
-```
+```javascript
 // 대상 코드
 function add(a, b) {
   return a + b;

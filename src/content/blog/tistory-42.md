@@ -23,7 +23,7 @@ Node.js의 Express 프레임워크를 사용하여 백엔드 서버를 개발하
 
 아래 코드를 보면 실제 로직보다 에러 처리를 위한 코드가 더 많은 것을 볼 수 있습니다. 만약 API가 100개라면, try-catch도 100번을 써야 하는 비효율적인 구조입니다.
 
-```
+```javascript
 // 기존 방식
 router.get('/users/:id', async (req, res, next) => {
   try {
@@ -45,7 +45,7 @@ router.get('/users/:id', async (req, res, next) => {
 
 방금 배우신 코드가 바로 그 역할을 합니다.
 
-```
+```javascript
 const catchAsync = (fn) => (req, res, next) => {
   Promise.resolve(fn(req, res, next)).catch(next);
 };
@@ -64,7 +64,7 @@ const catchAsync = (fn) => (req, res, next) => {
 
 이제 catchAsync 함수로 라우터를 감싸주기만 하면, try-catch 문을 전부 제거할 수 있습니다.
 
-```
+```javascript
 // 래퍼 함수 적용
 const getUser = catchAsync(async (req, res, next) => {
   const user = await User.findById(req.params.id);

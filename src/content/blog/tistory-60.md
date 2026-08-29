@@ -50,7 +50,7 @@ Jest는 설정이 간편하고 기능이 강력하여 사실상 Node.js 진영�
 
 먼저 터미널에서 다음 명령어를 입력하여 Jest를 개발 의존성으로 설치합니다.
 
-```
+```bash
 npm install --save-dev jest
 ```
 
@@ -58,7 +58,7 @@ npm install --save-dev jest
 
 설치가 완료되었다면 package.json 파일을 열어 scripts 부분에 test 명령어를 추가합니다.
 
-```
+```json
 {
   "scripts": {
     "test": "jest"
@@ -78,7 +78,7 @@ Jest의 테스트 코드는 크게 3가지 요소로 구성됩니다.
 2. test (또는 it): 개별 테스트 케이스를 정의합니다.
 3. expect: 검증할 대상을 지정하고 Matcher를 통해 기대하는 값과 비교합니다.
 
-```
+```javascript
 describe('계산기 테스트 그룹', () => {
   test('1 더하기 2는 3이어야 한다', () => {
     expect(1 + 2).toBe(3);
@@ -113,7 +113,7 @@ expect("hello").toBe("hello");
 
 객체(Object)나 배열(Array)의 내용이 같은지 확인할 때 사용합니다. 객체는 참조값이 다르기 때문에 toBe를 쓰면 실패할 수 있습니다.
 
-```
+```javascript
 const user = { name: "철수", age: 20 };
 expect(user).toEqual({ name: "철수", age: 20 });
 ```
@@ -132,7 +132,7 @@ expect(null).toBeFalsy();
 
 함수가 에러를 제대로 던지는지 확인할 때 사용합니다. 예외 처리가 잘 되어 있는지 검증할 때 필수적입니다.
 
-```
+```javascript
 const bomb = () => {
   throw new Error("펑!");
 };
@@ -147,7 +147,7 @@ expect(() => bomb()).toThrow();
 
 **검증 대상 코드 (validator.js)**
 
-```
+```javascript
 function isValidEmail(email) {
   if (!email) return false;
   if (!email.includes("@")) return false;
@@ -159,7 +159,7 @@ module.exports = { isValidEmail };
 
 **테스트 코드 (validator.test.js)**
 
-```
+```javascript
 const { isValidEmail } = require('./validator');
 
 describe('이메일 유효성 검사', () => {

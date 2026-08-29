@@ -15,7 +15,7 @@ source: "https://bluehamster.tistory.com/18"
 
 처음 if의 반복을 통해 단순 비교로 하려 하였으나 ToLower 와 Contains 를 통하여 더 간결하게 줄일 수 있음을 확인하였습니다.
 
-```
+```csharp
 using System;
 
 public class PascalTriangle
@@ -50,7 +50,7 @@ public class PascalTriangle
 
 아래 코드는 Gemini Ai 를 통해 개선한 코드 내용입니다.
 
-```
+```csharp
 using System;
 using System.Collections.Generic; // List<int> 사용을 위해 추가
 

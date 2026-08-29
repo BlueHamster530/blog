@@ -80,7 +80,7 @@ sequenceDiagram
 
 이때 등장하는 빛과 소금이 바로 ORM (Object-Relational Mapping)입니다. 단어 그대로 객체(Object)와 관계형 DB(Relational)를 매핑해 주는 도구입니다. 복잡한 SQL 대신, 우리가 친숙한 JavaScript나 TypeScript의 객체와 메서드를 이용해 DB를 조작할 수 있게 해줍니다.
 
-```
+```sql
 // 😭 쌩 SQL을 쓸 때 (오타 나기 딱 좋음)
 db.query("UPDATE users SET vote_status = true WHERE id = 1");
 
