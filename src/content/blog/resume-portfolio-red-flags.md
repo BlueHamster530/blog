@@ -6,6 +6,7 @@ tags: [개발자커리어, 이력서, 포트폴리오, 자기소개서, 취업�
 category: "커리어"
 date: 2026-08-28
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/resume-portfolio-red-flags/hero.png"
 ---
 
 
@@ -35,7 +36,7 @@ graph TD
 
 핵심은 **정독 단계까지 못 가면 내용의 질은 평가조차 되지 않는다**는 것입니다.
 
-<!-- 이미지 없음: hero (output/resume-portfolio-red-flags/images/hero.* 확인) -->
+![hero](/blog/images/resume-portfolio-red-flags/hero.png)
 
 ---
 
@@ -81,7 +82,7 @@ graph TD
 
 혼자 했더라도 **"다른 사람이 읽을 것을 전제로 남긴 기록"**이 있으면 협업 신호로 읽힙니다.
 
-<!-- 이미지 없음: solo (output/resume-portfolio-red-flags/images/solo.* 확인) -->
+![solo](/blog/images/resume-portfolio-red-flags/solo.png)
 
 ## 신호 3 — 나만 아는 용어를 남발한다
 
@@ -111,7 +112,7 @@ graph TD
 
 중요한 주의사항이 하나 있습니다. **없는 숫자를 만들어 넣으면 면접에서 무너집니다.** 정확한 수치가 없다면 "정확한 집계는 없지만 체감상 절반 이하로 줄었습니다" 처럼 **불확실성을 밝힌 채 쓰는 편**이 안전합니다. 면접관이 확인하는 건 숫자의 크기가 아니라 **그 숫자를 만든 과정을 설명할 수 있는가**입니다.
 
-<!-- 이미지 없음: metrics (output/resume-portfolio-red-flags/images/metrics.* 확인) -->
+![metrics](/blog/images/resume-portfolio-red-flags/metrics.png)
 
 ## 신호 5 — 외주 위주 커리어와 설명 없는 공백기
 

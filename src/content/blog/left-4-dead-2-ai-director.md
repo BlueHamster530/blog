@@ -6,6 +6,7 @@ tags: [레프트4데드2, 게임디자인, AI디렉터, 협동게임, 절차적�
 category: "게임"
 date: 2026-08-29
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/left-4-dead-2-ai-director/hero.png"
 ---
 
 
@@ -21,7 +22,7 @@ platforms: [Notion, Tistory]
 
 여기까지만 보면 흔한 좀비 게임입니다. 이 게임이 교과서 취급을 받는 이유는 **"같은 맵을 다시 해도 같은 판이 나오지 않는다"** 는 점에 있습니다.
 
-<!-- 이미지 없음: hero (output/left-4-dead-2-ai-director/images/hero.* 확인) -->
+![hero](/blog/images/left-4-dead-2-ai-director/hero.png)
 
 ---
 
@@ -66,7 +67,7 @@ platforms: [Notion, Tistory]
 
 레프트 4 데드 시리즈는 이 배치를 사람이 아니라 **AI 디렉터(AI Director)** 라는 시스템에 맡깁니다.
 
-<!-- 이미지 없음: director (output/left-4-dead-2-ai-director/images/director.* 확인) -->
+![director](/blog/images/left-4-dead-2-ai-director/director.png)
 
 ### 디렉터는 무엇을 보는가 — 강도(Intensity)
 
@@ -103,7 +104,7 @@ stateDiagram-v2
 
 정리하면 이렇습니다. **레벨 디자이너는 무대와 가능한 배치 후보를 설계하고, 디렉터는 그중 무엇을 언제 쓸지 실시간으로 고른다.**
 
-<!-- 이미지 없음: pacing (output/left-4-dead-2-ai-director/images/pacing.* 확인) -->
+![pacing](/blog/images/left-4-dead-2-ai-director/pacing.png)
 
 ---
 
