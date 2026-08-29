@@ -6,6 +6,7 @@ tags: [Claude, ClaudeCode, AI활용, 개발생산성, AI에이전트]
 category: "AI 개발도구"
 date: 2026-08-21
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/claude-desktop-app-guide/hero.png"
 ---
 
 

@@ -6,6 +6,7 @@ tags: [ClaudeCode, AI, 스킬, 개발생산성, 자동화]
 category: "AI 개발도구"
 date: 2026-07-01
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/claude-code-skills/hero.jpg"
 ---
 
 

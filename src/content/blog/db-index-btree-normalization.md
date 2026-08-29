@@ -6,6 +6,7 @@ tags: [데이터베이스, 인덱스, BTree, 정규화, 면접]
 category: "데이터베이스"
 date: 2026-07-10
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/db-index-btree-normalization/hero.png"
 ---
 
 

@@ -6,6 +6,7 @@ tags: [ORM, 데이터베이스, 백엔드, Prisma, 설계]
 category: "백엔드"
 date: 2026-07-10
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/why-use-orm/hero.png"
 ---
 
 

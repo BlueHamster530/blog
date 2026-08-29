@@ -9,6 +9,7 @@ const blog = defineCollection({
     date: z.coerce.date(),
     tags: z.array(z.string()).optional().default([]),
     category: z.string().optional(),
+    thumbnail: z.string().optional(),
     // 원본 frontmatter의 나머지 필드는 무시해도 되도록 허용
     slug: z.string().optional(),
     platforms: z.array(z.string()).optional(),

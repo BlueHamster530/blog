@@ -6,6 +6,7 @@ tags: [AI, 프롬프트엔지니어링, AI에이전트, RAG, 개발트렌드]
 category: "개발 트렌드"
 date: 2026-07-28
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/ai-usage-evolution-prompt-to-agent/hero.png"
 ---
 
 

@@ -6,6 +6,7 @@ tags: [AI활용, 프롬프트엔지니어링, 업무자동화, AX, 직장인]
 category: "개발 트렌드"
 date: 2026-07-28
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/ai-ax-guide-for-office-workers/hero.png"
 ---
 
 

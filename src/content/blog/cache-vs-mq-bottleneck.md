@@ -6,6 +6,7 @@ tags: [캐시, 메시지큐, Redis, Kafka, 성능튜닝]
 category: "백엔드"
 date: 2026-07-14
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/cache-vs-mq-bottleneck/hero.png"
 ---
 
 

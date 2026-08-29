@@ -6,6 +6,7 @@ tags: [CSharp, 객체지향, 오버로딩, 오버라이딩, 면접]
 category: "CS 기초"
 date: 2026-07-10
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/overloading-vs-overriding/hero.png"
 ---
 
 

@@ -118,7 +118,16 @@ async function main() {
 
     if (missing.length) warnings.push(`${slug}: 누락 이미지 [${missing.join(', ')}]`);
 
-    const finalDoc = `---\n${parts.fm}\n---\n\n${newBody}`;
+    // 대표 이미지(썸네일): 'hero' 우선, 없으면 첫 이미지
+    let thumb = null;
+    if (existsSync(imagesDir)) {
+      const imgs = (await readdir(imagesDir)).filter((f) => /\.(png|jpe?g|webp|gif|avif)$/i.test(f));
+      const hero = imgs.find((f) => path.parse(f).name === 'hero') ?? imgs.sort()[0];
+      if (hero) thumb = `${BASE}/images/${slug}/${hero}`;
+    }
+    const fm = thumb ? `${parts.fm}\nthumbnail: "${thumb}"` : parts.fm;
+
+    const finalDoc = `---\n${fm}\n---\n\n${newBody}`;
     await writeFile(path.join(CONTENT_DIR, `${slug}.md`), finalDoc, 'utf8');
     count++;
     console.log(`  ✓ ${slug}  (이미지 ${copied}개)`);

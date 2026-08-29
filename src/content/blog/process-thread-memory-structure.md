@@ -6,6 +6,7 @@ tags: [프로세스, 쓰레드, 운영체제, 개발자면접, 메모리구조]
 category: "운영체제"
 date: 2026-07-14
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/process-thread-memory-structure/hero.png"
 ---
 
 

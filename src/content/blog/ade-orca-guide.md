@@ -6,6 +6,7 @@ tags: [ADE, Orca, AIcoding, DevTools, CodingAgent]
 category: "개발 트렌드"
 date: 2026-07-13
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/ade-orca-guide/hero.png"
 ---
 
 

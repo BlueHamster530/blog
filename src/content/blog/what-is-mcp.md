@@ -6,6 +6,7 @@ tags: [MCP, AI에이전트, DevTools, AI, 프로토콜]
 category: "AI 개발도구"
 date: 2026-08-21
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/what-is-mcp/hero.png"
 ---
 
 

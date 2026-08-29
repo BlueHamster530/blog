@@ -6,6 +6,7 @@ tags: [TCP, 3way핸드셰이크, 네트워크, CS기초, 면접]
 category: "네트워크"
 date: 2026-07-10
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/tcp-3-way-handshake/hero.png"
 ---
 
 

@@ -6,6 +6,7 @@ tags: [REST, API설계, 아키텍처, 웹개발, CS기초]
 category: "웹 기초"
 date: 2026-07-10
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/rest-architecture-constraints/hero.png"
 ---
 
 

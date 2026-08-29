@@ -6,6 +6,7 @@ tags: [네트워크, OSI7계층, CS기초, 프로토콜, 면접]
 category: "네트워크"
 date: 2026-07-10
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/osi-7-layers/hero.png"
 ---
 
 

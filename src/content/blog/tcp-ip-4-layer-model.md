@@ -6,6 +6,7 @@ tags: [네트워크, TCPIP, 4계층, CS기초, 면접]
 category: "네트워크"
 date: 2026-07-10
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/tcp-ip-4-layer-model/hero.png"
 ---
 
 

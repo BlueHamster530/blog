@@ -6,6 +6,7 @@ tags: [KPI, 개발자커리어, 신입개발자, 성과관리, 개발생산성]
 category: "커리어"
 date: 2026-07-10
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/junior-developer-kpi/hero.png"
 ---
 
 

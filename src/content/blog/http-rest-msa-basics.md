@@ -6,6 +6,7 @@ tags: [HTTP, REST, MSA, 네트워크, 아키텍처]
 category: "웹 기초"
 date: 2026-07-10
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/http-rest-msa-basics/hero.png"
 ---
 
 

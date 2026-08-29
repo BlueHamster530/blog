@@ -6,6 +6,7 @@ tags: [Docker, 컨테이너, DockerCompose, 인프라, 개발환경]
 category: "인프라"
 date: 2026-07-10
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/docker-container-compose/hero.png"
 ---
 
 

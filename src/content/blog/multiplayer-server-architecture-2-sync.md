@@ -6,6 +6,7 @@ tags: [멀티플레이, 게임서버, 넷코드, 랙보상, 롤백넷코드]
 category: "네트워크"
 date: 2026-08-24
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/multiplayer-server-architecture-2-sync/hero.png"
 ---
 
 

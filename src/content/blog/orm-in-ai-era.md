@@ -6,6 +6,7 @@ tags: [ORM, JPA, Hibernate, SQL, AI코딩]
 category: "백엔드"
 date: 2026-08-02
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/orm-in-ai-era/hero.png"
 ---
 
 

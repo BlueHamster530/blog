@@ -6,6 +6,7 @@ tags: [멀티플레이, 게임서버, 네트워크, P2P, 데디케이티드서�
 category: "네트워크"
 date: 2026-08-24
 platforms: [Notion, Tistory]
+thumbnail: "/blog/images/multiplayer-server-architecture-1-topology/hero.png"
 ---
 
 
