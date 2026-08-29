@@ -1,0 +1,28 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+const { post } = Astro.props;
+const { title, description, date, tags, category } = post.data;
+const base = import.meta.env.BASE_URL;
+const dateStr = date.toISOString().slice(0, 10);
+---
+<BaseLayout title={title} description={description}>
+  <a class="back" href={base}>← 글 목록</a>
+  <article class="post">
+    <h1 class="post-title">{title}</h1>
+    <div class="post-meta">
+      {dateStr}
+      {category && <> · {category}</>}
+      {tags && tags.length > 0 && (
+        <div style="margin-top:8px">
+          {tags.map((t) => <span class="tag">{t}</span>)}
+        </div>
+      )}
+    </div>
+    <slot />
+  </article>
+</BaseLayout>
