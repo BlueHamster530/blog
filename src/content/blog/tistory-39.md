@@ -3,7 +3,7 @@ title: "[Prisma] DB 쿼리 속도가 느리다면? @@index로 성능 최적화�
 slug: "tistory-39"
 description: "서비스를 개발하다 보면 데이터가 적을 때는 빨랐던 API가, 데이터가 쌓일수록 점점 느려지는 경험을 하게 됩니다. 이때 가장 먼저 확인해야 할 것이 바로 데이터베이스 인덱싱(Indexing)입니다. 오늘은 Prisma 스키마에서 @@index를 사용하여 쿼리 성능을 획기적으로 높이는 방"
 date: 2025-11-14
-category: "이관 글"
+category: "서버 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/39"
 ---

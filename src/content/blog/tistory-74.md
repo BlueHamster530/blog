@@ -3,7 +3,7 @@ title: "[Node.js] PM2 클러스터 환경에서 스케줄러(Cron) 돌리다 대
 slug: "tistory-74"
 description: "안녕하세요!'코드로 세상을 구축하고 글로 지식을 연결하는' 여러분의 동네 엔지니어입니다. 👨‍💻✨지난번 포스팅(이라 쓰고 우리의 상상 속 기억이라 읽습니다)에서 우리는 Node.js의 싱글 스레드 한계를 극복하기 위해*PM2 클러스터링(Clustering)이라는 마법을 부렸습니다. 요리"
 date: 2026-04-20
-category: "이관 글"
+category: "서버 개발"
 tags: [Bull, cron, Express, nodejs, 서버스케줄링]
 source: "https://bluehamster.tistory.com/74"
 thumbnail: "/blog/images/tistory-74/img1.jpg"

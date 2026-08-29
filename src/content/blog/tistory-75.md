@@ -3,7 +3,7 @@ title: "[네트워크/인프라] 로드밸런서의 두 가지 뇌: 정적 방�
 slug: "tistory-75"
 description: "트래픽 폭주로 인한 서버 다운을 막아주는 로드밸런싱의 핵심 개념을 알아봅니다. 정적 로드밸런싱(라운드 로빈, IP 해시)과 동적 로드밸런싱(최소 연결, 최소 응답 시간)의 차이점과 작동 방식을 식당 웨이터 비유를 통해 초보자도 아주 쉽게 이해할 수 있도록 정리했습니다. 안녕하세요! 여러"
 date: 2026-04-27
-category: "이관 글"
+category: "웹 개발"
 tags: [CS지식, 네트워크, 로드밸런싱, 백엔드, 서버아키텍처]
 source: "https://bluehamster.tistory.com/75"
 thumbnail: "/blog/images/tistory-75/img1.png"

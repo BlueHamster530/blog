@@ -3,7 +3,7 @@ title: "[JS 기초] 모듈 시스템(import/export)을 쓰는 이유와 Axios의
 slug: "tistory-32"
 description: "안녕하세요! 자바스크립트로 웹 애플리케이션을 개발할 때, 우리는 수많은 코드 파일과 서버 통신을 다루게 됩니다. 이때 두 가지 개념이 개발의 품질과 효율성을 크게 좌우합니다. 바로 모듈(Module) 시스템과 Axios 같은 HTTP 통신 라이브러리입니다.왜 우리는 코드를 import/"
 date: 2025-10-20
-category: "이관 글"
+category: "JS"
 tags: [이관]
 source: "https://bluehamster.tistory.com/32"
 ---

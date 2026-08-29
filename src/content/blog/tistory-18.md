@@ -3,7 +3,7 @@ title: "모음의 개수 / 백준"
 slug: "tistory-18"
 description: "https://www.acmicpc.net/problem/1264 백준 문제(1264) / 모음의 개수 처음 if의 반복을 통해 단순 비교로 하려 하였으나 ToLower 와 Contains 를 통하여 더 간결하게 줄일 수 있음을 확인하였습니다. using System;public cla"
 date: 2025-09-17
-category: "이관 글"
+category: "코딩테스트"
 tags: [이관]
 source: "https://bluehamster.tistory.com/18"
 ---

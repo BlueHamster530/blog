@@ -3,7 +3,7 @@ title: "[Node.js] Express에서 반복되는 try-catch 문 없애기: 비동기 
 slug: "tistory-42"
 description: "안녕하세요.Node.js의 Express 프레임워크를 사용하여 백엔드 서버를 개발하다 보면, 비동기 처리를 위해 async/await 문법을 자주 사용하게 됩니다. 코드가 간결해지고 가독성이 좋아지기 때문입니다.하지만 Express(버전 4 이하)는 비동기 함수에서 발생한 에러를 자동으"
 date: 2025-11-27
-category: "이관 글"
+category: "웹 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/42"
 ---

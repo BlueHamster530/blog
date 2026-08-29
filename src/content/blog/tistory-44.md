@@ -3,7 +3,7 @@ title: "[Node.js] Express의 심장, 미들웨어(Middleware)란 무엇인가?"
 slug: "tistory-44"
 description: "안녕하세요. Node.js를 위한 웹 프레임워크인 Express를 공부하다 보면, 가장 많이 듣게 되는 단어가 바로 미들웨어(Middleware)입니다. 실제로 Express 공식 문서에서는 Express는 자체적인 기능은 최소한으로 갖추고, 수많은 미들웨어 함수들을 통해 구성된 프레임"
 date: 2025-12-08
-category: "이관 글"
+category: "웹 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/44"
 ---

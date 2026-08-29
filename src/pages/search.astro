@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Toolbar from '../components/Toolbar.astro';
+import { getSortedPosts, categoryList, url, fmtDate } from '../lib/posts';
+
+const posts = await getSortedPosts();
+const cats = categoryList(posts);
+const index = posts.map((p) => ({
+  title: p.data.title,
+  desc: p.data.description || '',
+  category: p.data.category || '',
+  tags: p.data.tags || [],
+  date: fmtDate(p.data.date),
+  thumb: p.data.thumbnail || '',
+  href: url(p.id),
+}));
+---
+<BaseLayout title="검색 · BlueHamster 블로그" description="블로그 글 검색">
+  <section class="intro">
+    <h1>검색</h1>
+    <p>제목 · 요약 · 태그 · 카테고리에서 찾습니다. <span class="count">전체 {posts.length}개</span></p>
+  </section>
+
+  <form class="search-box big" id="searchForm" role="search" onsubmit="return false">
+    <input type="search" id="q" placeholder="검색어를 입력하세요…" aria-label="검색어" autofocus />
+    <button type="button" id="clearBtn" aria-label="지우기">✕</button>
+  </form>
+
+  <p id="status" class="search-status"></p>
+  <ul class="post-list" id="results"></ul>
+
+  <Toolbar categories={cats} active="" total={posts.length} />
+
+  <script type="application/json" id="search-index" set:html={JSON.stringify(index)} />
+  <script>
+    const data = JSON.parse(document.getElementById('search-index').textContent);
+    const input = document.getElementById('q');
+    const results = document.getElementById('results');
+    const status = document.getElementById('status');
+    const clearBtn = document.getElementById('clearBtn');
+
+    const esc = (s) => String(s).replace(/[&<>"']/g, (c) =>
+      ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+    function card(p) {
+      const thumb = p.thumb ? `<div class="thumb"><img src="${esc(p.thumb)}" alt="" loading="lazy"></div>` : '';
+      const tags = (p.tags || []).slice(0, 4).map((t) => `<span class="tag">#${esc(t)}</span>`).join('');
+      return `<li class="post-item"><a class="post-link" href="${esc(p.href)}">${thumb}
+        <div class="post-body">
+          <div class="meta">${esc(p.date)}${p.category ? ' · ' + esc(p.category) : ''}</div>
+          <h2 class="title">${esc(p.title)}</h2>
+          ${p.desc ? `<p class="desc">${esc(p.desc)}</p>` : ''}
+          ${tags ? `<div class="tags">${tags}</div>` : ''}
+        </div></a></li>`;
+    }
+
+    function render(q) {
+      const query = q.trim().toLowerCase();
+      if (!query) {
+        results.innerHTML = '';
+        status.textContent = '검색어를 입력하면 결과가 표시됩니다.';
+        return;
+      }
+      const terms = query.split(/\s+/);
+      const hits = data.filter((p) => {
+        const hay = (p.title + ' ' + p.desc + ' ' + p.category + ' ' + (p.tags || []).join(' ')).toLowerCase();
+        return terms.every((t) => hay.includes(t));
+      });
+      status.textContent = `"${q.trim()}" — ${hits.length}개 결과`;
+      results.innerHTML = hits.map(card).join('');
+    }
+
+    let t;
+    input.addEventListener('input', () => {
+      clearTimeout(t);
+      t = setTimeout(() => {
+        render(input.value);
+        const u = new URL(location.href);
+        input.value ? u.searchParams.set('q', input.value) : u.searchParams.delete('q');
+        history.replaceState(null, '', u);
+      }, 120);
+    });
+    clearBtn.addEventListener('click', () => { input.value = ''; render(''); input.focus();
+      const u = new URL(location.href); u.searchParams.delete('q'); history.replaceState(null, '', u); });
+
+    const initial = new URLSearchParams(location.search).get('q') || '';
+    input.value = initial;
+    render(initial);
+  </script>
+</BaseLayout>

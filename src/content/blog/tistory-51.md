@@ -3,7 +3,7 @@ title: "[Dev] 개발자의 가장 큰 고민, '이름 짓기': 4가지 대표 �
 slug: "tistory-51"
 description: "안녕하세요. 컴퓨터 과학계에는 유명한 농담이 하나 있습니다. '컴퓨터 과학에서 가장 힘든 일은 딱 두 가지다. 하나는 캐시 무효화(Cache Invalidation)이고, 다른 하나는 바로 이름 짓기(Naming)다.' 변수명, 함수명, 클래스명 등을 지을 때 규칙 없이 마음대로 짓게 "
 date: 2025-12-22
-category: "이관 글"
+category: "개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/51"
 ---

@@ -3,7 +3,7 @@ title: "[Back-End] 서버 개발자의 난제, 이미지 업로드 방식 완벽
 slug: "tistory-45"
 description: "안녕하세요. 웹이나 앱 서비스를 개발하다 보면 프로필 사진 변경, 게시글 이미지 첨부 등 파일 업로드를 구현해야 하는 순간이 반드시 찾아옵니다. 텍스트 데이터(JSON)만 주고받을 때는 단순했던 통신이, 파일이라는 바이너리 데이터가 끼어들면 고려해야 할 점이 많아집니다.파일을 서버로 어"
 date: 2025-12-08
-category: "이관 글"
+category: "웹 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/45"
 ---

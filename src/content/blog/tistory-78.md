@@ -3,7 +3,7 @@ title: "[백엔드 면접 대비] RDB 무결성, 트랜잭션 그리고 Prisma O
 slug: "tistory-78"
 description: "백엔드 개발자 면접의 단골 질문! RDB의 핵심 개념인 데이터 무결성과 트랜잭션의 원리를 알아보고, 복잡한 SQL을 우아하게 대체하는 ORM의 장점, 특히 Prisma가 제공하는 강력한 타입 안정성에 대해 완벽하게 정리합니다. 면접 전 3분 컷으로 핵심만 쏙쏙 뽑아 가세요! 안녕하세요!"
 date: 2026-05-16
-category: "이관 글"
+category: "서버 개발"
 tags: [ORM, prisma, RDB, 백엔드면접, 트랜잭션]
 source: "https://bluehamster.tistory.com/78"
 thumbnail: "/blog/images/tistory-78/img1.jpg"

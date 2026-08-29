@@ -3,7 +3,7 @@ title: "[Node.js] 가짜로 진짜처럼 테스트하기: Jest로 시작하는 �
 slug: "tistory-62"
 description: "안녕하세요. 지난 게시글들을 통해 기본적인 테스트 문법과 비동기 처리 방법을 익혔습니다.하지만 막상 실무 프로젝트에 테스트를 적용하려다 보면 곧바로 벽에 부딪히게 됩니다.'회원가입 테스트를 할 때마다 진짜 이메일이 발송되면 어떡하지?' '결제 로직을 테스트할 때마다 실제 돈이 빠져나가면"
 date: 2026-01-20
-category: "이관 글"
+category: "서버 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/62"
 thumbnail: "/blog/images/tistory-62/img1.png"

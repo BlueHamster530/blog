@@ -3,7 +3,7 @@ title: "[DB/Node.js] 🚨 내 서버를 뻗게 만드는 조용한 암살자, N+
 slug: "tistory-72"
 description: "안녕하세요! 오늘은 백엔드 개발자라면 한 번쯤 마주치게 되는(혹은 이미 당하고 있을지도 모르는) 무시무시한 녀석, 'N+1 문제'에 대해 이야기해 보려고 합니다.분명 로컬 환경에서는 API가 날아다녔는데, 실서버에 배포하고 데이터가 쌓이기 시작하니 응답 속도가 거북이🐢가 되어버린 경험 "
 date: 2026-02-26
-category: "이관 글"
+category: "서버 개발"
 tags: [DB성능최적화, N+1문제, nodejs, N플러스1문제, ORM, prisma]
 source: "https://bluehamster.tistory.com/72"
 thumbnail: "/blog/images/tistory-72/img1.png"

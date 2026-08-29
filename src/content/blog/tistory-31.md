@@ -3,7 +3,7 @@ title: "핸드폰 요금 (백준) / C#"
 slug: "tistory-31"
 description: "https://www.acmicpc.net/problem/1267 문제동호는 새악대로 T 통신사의 새 핸드폰 옴머나를 샀다. 새악대로 T 통신사는 동호에게 다음 두 가지 요금제 중 하나를 선택하라고 했다.영식 요금제민식 요금제영식 요금제는 30초마다 10원씩 청구된다. 이 말은 만약 2"
 date: 2025-10-14
-category: "이관 글"
+category: "코딩테스트"
 tags: [이관]
 source: "https://bluehamster.tistory.com/31"
 ---

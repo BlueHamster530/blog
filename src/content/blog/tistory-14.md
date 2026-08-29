@@ -3,7 +3,7 @@ title: "Rythminspace 제작(졸업작품 1)"
 slug: "tistory-14"
 description: "22년도 졸업작품으로 제작한 게임1제목: 리듬인스페이스장르: 리듬게임설명: 얼불춤의 영향을 받아서 키를 최대한 단순화 시킨 리듬게임.--------------------------------------------------------------------------------------"
 date: 2023-01-09
-category: "이관 글"
+category: "유니티"
 tags: [이관]
 source: "https://bluehamster.tistory.com/14"
 thumbnail: "/blog/images/tistory-14/img1.png"

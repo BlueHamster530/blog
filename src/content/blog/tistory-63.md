@@ -3,7 +3,7 @@ title: "[Node.js] 숫자에 속지 마세요: Jest로 시작하는 테스트 코
 slug: "tistory-63"
 description: "안녕하세요. Jest의 기본 문법, 비동기 처리, 그리고 Mocking까지 백엔드 테스트를 위한 기술적인 도구들은 모두 손에 쥐었습니다. 이제 여러분은 신나게 테스트 코드를 작성하기 시작합니다. 그러다 보면 문득 이런 궁금증이 생길 겁니다.'도대체 테스트를 얼마나 짜야 하는 거지? 모든"
 date: 2026-01-20
-category: "이관 글"
+category: "서버 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/63"
 thumbnail: "/blog/images/tistory-63/img1.png"

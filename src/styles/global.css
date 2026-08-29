@@ -44,6 +44,7 @@ header.site {
 }
 header.site .wrap { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
 header.site a.brand { font-weight: 700; font-size: 20px; color: var(--fg); text-decoration: none; }
+header.site nav { display: flex; gap: 18px; }
 header.site nav a { color: var(--muted); text-decoration: none; font-size: 15px; }
 header.site nav a:hover { color: var(--accent); }
 
@@ -113,3 +114,42 @@ article.post hr { border: none; border-top: 1px solid var(--border); margin: 36p
 
 .back { display: inline-block; margin-bottom: 24px; color: var(--muted); text-decoration: none; font-size: 14px; }
 .back:hover { color: var(--accent); }
+
+/* 툴바(검색 + 카테고리 칩) */
+.toolbar { margin: 0 0 24px; }
+.search-box { display: flex; gap: 8px; margin-bottom: 14px; }
+.search-box input {
+  flex: 1; padding: 10px 14px; font-size: 15px; color: var(--fg);
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+}
+.search-box input:focus { outline: none; border-color: var(--accent); }
+.search-box button {
+  padding: 0 14px; border: 1px solid var(--border); background: var(--card);
+  border-radius: 10px; cursor: pointer; font-size: 15px; color: var(--fg);
+}
+.search-box button:hover { border-color: var(--accent); }
+.search-box.big input { padding: 13px 16px; font-size: 17px; }
+
+.cat-bar { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13px; color: var(--fg); text-decoration: none;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 999px; padding: 5px 12px; transition: all .12s ease;
+}
+.chip:hover { border-color: var(--accent); color: var(--accent); }
+.chip.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+.chip span { font-size: 11px; opacity: .7; }
+.chip.on span { opacity: .85; }
+
+/* 페이지네이션 */
+.pagination { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 40px 0 8px; }
+.pg {
+  min-width: 38px; text-align: center; padding: 8px 12px; font-size: 14px;
+  color: var(--fg); text-decoration: none; background: var(--card);
+  border: 1px solid var(--border); border-radius: 9px;
+}
+.pg:hover { border-color: var(--accent); color: var(--accent); }
+.pg.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.search-status { color: var(--muted); font-size: 14px; margin: 4px 0 18px; }

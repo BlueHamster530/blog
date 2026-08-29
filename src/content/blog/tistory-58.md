@@ -3,7 +3,7 @@ title: "[REST API] 무상태성(Stateless)이란? 서버가 '기억상실증'에
 slug: "tistory-58"
 description: "안녕하세요. RESTful API를 설계하거나 공부하다 보면 반드시 마주치는 용어가 있습니다. 바로 Stateless(무상태성)입니다. '서버가 상태를 저장하지 않는다'라는 문장 자체는 이해하기 쉽지만, 이것이 구체적으로 어떤 의미인지, 그리고 왜 이렇게 설계해야 하는지 깊게 파고들면 "
 date: 2026-01-19
-category: "이관 글"
+category: "웹 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/58"
 ---

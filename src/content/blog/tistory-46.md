@@ -3,7 +3,7 @@ title: "[Web] 로그인 유지의 두 가지 갈래: 세션(Session) vs 토큰(T
 slug: "tistory-46"
 description: "안녕하세요. 우리가 매일 사용하는 웹사이트들은 어떻게 내가 로그인했다는 사실을 기억할까요? 웹 통신 규약인 HTTP는 본래 상태를 저장하지 않는(Stateless) 특성이 있어, 페이지를 이동할 때마다 내가 누구인지 서버에 계속 알려줘야 합니다. 이때 사용자의 로그인 상태를 유지하는 방"
 date: 2025-12-08
-category: "이관 글"
+category: "웹 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/46"
 thumbnail: "/blog/images/tistory-46/img1.png"

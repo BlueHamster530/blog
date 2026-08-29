@@ -3,7 +3,7 @@ title: "[Node.js/PM2] 하나의 서버에서 여러 앱 돌리다가 .env 토큰
 slug: "tistory-79"
 description: "안녕하세요! 코드로 세상을 구축하고픈 백엔드 개발자입니다. 🚀 최근 AWS Lightsail 서버 하나에 뉴스 키워드 검색 알림, 공고알림 등을 수행하는 3개의 봇을 각각 다른 폴더로 나누어 배포하는 작업을 진행했습니다.폴더 구조를 깔끔하게 분리하고, 각각의 봇 폴더 안에 .env 파일"
 date: 2026-05-16
-category: "이관 글"
+category: "서버 개발"
 tags: [env, Lightsail, nodejs, PM2, 서버배포, 트러블슈팅]
 source: "https://bluehamster.tistory.com/79"
 thumbnail: "/blog/images/tistory-79/img1.png"

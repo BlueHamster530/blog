@@ -3,7 +3,7 @@ title: "[Node.js] 비동기 처리와 Promise, 면접관 통과 프리패스 가
 slug: "tistory-77"
 description: "Node.js 백엔드 개발자 면접 단골 질문! 자바스크립트 비동기 처리의 핵심인 Promise의 3가지 상태부터 async/await의 깔끔한 에러 처리, 그리고 Promise.all의 핵심인 Fail-fast 특징까지. 주니어 개발자도 단번에 이해할 수 있게 카페 진동벨 비유로 쉽고 "
 date: 2026-05-16
-category: "이관 글"
+category: "서버 개발"
 tags: [javascript, js, nodejs, promise, 비동기처리, 비동기처리Promise]
 source: "https://bluehamster.tistory.com/77"
 thumbnail: "/blog/images/tistory-77/img1.jpg"

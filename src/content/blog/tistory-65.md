@@ -3,7 +3,7 @@ title: "[백엔드 공부] 거대한 모놀리스를 쪼개자: 마이크로 서
 slug: "tistory-65"
 description: "개발 공부를 하다 보면 '네카라쿠배(네이버, 카카오, 라인, 쿠팡, 배달의민족)' 같은 대규모 기업들이 MSA(Microservices Architecture)를 도입했다는 이야기를 자주 듣습니다.처음에는 '그냥 유행인가?' 싶었는데, 공부해보니 시스템이 커질수록 필연적으로 선택할 수밖"
 date: 2026-01-26
-category: "이관 글"
+category: "서버 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/65"
 thumbnail: "/blog/images/tistory-65/img1.jpg"

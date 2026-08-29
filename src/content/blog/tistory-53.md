@@ -3,7 +3,7 @@ title: "[Notion] 노션으로 나만의 칸반 보드 만들기: 프로젝트 �
 slug: "tistory-53"
 description: "안녕하세요.개인 프로젝트나 팀 프로젝트를 진행하다 보면, 업무의 흐름을 한눈에 파악하고 일정 관리를 효율적으로 하는 것이 무엇보다 중요합니다. 저는 이를 위해 주로 칸반(Kanban) 시스템을 활용하는데요. 칸반 시스템에 대해서는 아래 게시글을 확인해 주세요2025.12.31 - [개발"
 date: 2025-12-31
-category: "이관 글"
+category: "프로젝트 관리 및 기획"
 tags: [이관]
 source: "https://bluehamster.tistory.com/53"
 thumbnail: "/blog/images/tistory-53/img1.png"

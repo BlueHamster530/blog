@@ -3,7 +3,7 @@ title: "메쓰포레스트 개발(제 2회 웅진 씽크빅 게임개발 챌린�
 slug: "tistory-12"
 description: "22년도 6월부터 12월까지 친구들과 함께 웅진 씽크빅 게임개발 챌린지에 참여했습니다. 프로그래머2 그래픽2으로 팀을 구성했고 뱀파이어서바이벌류의 게임을 제작하였습니다. 제가 담당한 파트는 Ai와 웅진에서 배포해준 API활용, 도전과제를 담당했습니다. 도전과제는 유니티의 PlayerPr"
 date: 2023-01-09
-category: "이관 글"
+category: "유니티"
 tags: [이관]
 source: "https://bluehamster.tistory.com/12"
 thumbnail: "/blog/images/tistory-12/img1.png"

@@ -3,7 +3,7 @@ title: "[Node.js] 비동기 처리도 문제없다: Jest로 시작하는 테스�
 slug: "tistory-61"
 description: "안녕하세요. 지난 게시글에서는 덧셈 함수나 이메일 검증 같은 동기(Synchronous) 코드를 테스트하는 방법을 알아봤습니다. 하지만 Node.js 백엔드 개발의 현실은 조금 다릅니다.데이터베이스에서 유저 정보를 조회하고,외부 API에 요청을 보내고, 파일을 읽고 쓰는 작업 등 대부분"
 date: 2026-01-20
-category: "이관 글"
+category: "서버 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/61"
 thumbnail: "/blog/images/tistory-61/img1.png"

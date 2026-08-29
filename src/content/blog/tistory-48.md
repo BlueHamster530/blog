@@ -3,7 +3,7 @@ title: "[C#] 타르코프(Tarkov) NVIDIA 설정 원클릭 자동화 프로그램
 slug: "tistory-48"
 description: "안녕하세요. 이스케이프 프롬 타르코프(Escape from Tarkov)를 즐기는 유저라면 적을 더 잘 식별하기 위해(색적) 엔비디아 제어판 설정을 건드려본 경험이 있으실 겁니다. 특히 제가 이전에 작성한 게시물을 통해 레이드 환경에 맞추어 nvidia 설정을 변경하고 계실 수 있습니다"
 date: 2025-12-11
-category: "이관 글"
+category: "C#"
 tags: [C#, nvidia, 그래픽 옵션 설정, 타르코프]
 source: "https://bluehamster.tistory.com/48"
 thumbnail: "/blog/images/tistory-48/img1.png"

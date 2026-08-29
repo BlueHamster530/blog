@@ -1,45 +1,24 @@
 ---
-import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+import Toolbar from '../components/Toolbar.astro';
+import Pagination from '../components/Pagination.astro';
+import { getSortedPosts, categoryList, url, PAGE_SIZE } from '../lib/posts';
 
-const rawBase = import.meta.env.BASE_URL;
-const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
-const posts = (await getCollection('blog')).sort(
-  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
-);
-const join = (slug: string) => `${base}${slug}`;
+const posts = await getSortedPosts();
+const cats = categoryList(posts);
+const totalPages = Math.ceil(posts.length / PAGE_SIZE);
+const pagePosts = posts.slice(0, PAGE_SIZE);
+const hrefFor = (p: number) => (p === 1 ? url() : url(`page/${p}`));
 ---
 <BaseLayout title="BlueHamster 블로그" description="개발 · AI · CS 기초를 정리하는 블로그">
   <section class="intro">
     <h1>글 목록</h1>
     <p>만들면서 배운 것들 — 개발 · AI · CS 기초를 정리합니다. <span class="count">{posts.length}개</span></p>
   </section>
+  <Toolbar categories={cats} active="" total={posts.length} />
   <ul class="post-list">
-    {posts.map((post) => {
-      const dateStr = post.data.date.toISOString().slice(0, 10);
-      const { thumbnail, title, description, category, tags } = post.data;
-      return (
-        <li class="post-item">
-          <a class="post-link" href={join(post.id)}>
-            {thumbnail && (
-              <div class="thumb"><img src={thumbnail} alt="" loading="lazy" /></div>
-            )}
-            <div class="post-body">
-              <div class="meta">
-                {dateStr}
-                {category && <> · {category}</>}
-              </div>
-              <h2 class="title">{title}</h2>
-              {description && <p class="desc">{description}</p>}
-              {tags && tags.length > 0 && (
-                <div class="tags">
-                  {tags.slice(0, 4).map((t) => <span class="tag">#{t}</span>)}
-                </div>
-              )}
-            </div>
-          </a>
-        </li>
-      );
-    })}
+    {pagePosts.map((post) => <PostCard post={post} />)}
   </ul>
+  <Pagination current={1} total={totalPages} hrefFor={hrefFor} />
 </BaseLayout>

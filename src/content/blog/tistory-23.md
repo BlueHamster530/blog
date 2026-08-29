@@ -3,7 +3,7 @@ title: "직사각형에서 탈출 / 백준 (C#)"
 slug: "tistory-23"
 description: "https://www.acmicpc.net/problem/1085 직사각형에서 탈출 문제한수는 지금 (x, y)에 있다. 직사각형은 각 변이 좌표축에 평행하고, 왼쪽 아래 꼭짓점은 (0, 0), 오른쪽 위 꼭짓점은 (w, h)에 있다. 직사각형의 경계선까지 가는 거리의 최솟값을 구하는 "
 date: 2025-09-20
-category: "이관 글"
+category: "코딩테스트"
 tags: [이관]
 source: "https://bluehamster.tistory.com/23"
 ---

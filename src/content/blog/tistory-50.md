@@ -3,7 +3,7 @@ title: "[SQL] 그룹별 소계와 총계를 한방에: WITH ROLLUP 완벽 정리
 slug: "tistory-50"
 description: "안녕하세요. 백엔드 개발을 공부하다 보면 관리자 페이지의 대시보드나 통계 리포트를 만들어야 할 때가 종종 있습니다. 이때 지역별 가입자 수나 월별 매출 같은 데이터를 뽑아내야 하는데, 단순히 그룹별 데이터뿐만 아니라 각 그룹의 소계(Subtotal)나 전체 총합계(Grand Total)"
 date: 2025-12-16
-category: "이관 글"
+category: "서버 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/50"
 thumbnail: "/blog/images/tistory-50/img1.png"

@@ -3,7 +3,7 @@ title: "[개발 환경] 백엔드 개발자가 '검은 화면(CLI)'과 친해져
 slug: "tistory-33"
 description: "안녕하세요! 처음 개발에 입문하면 마우스 클릭으로 편하게 사용할 수 있는 GUI(그래픽 사용자 인터페이스) 툴이 참 많습니다. (VS Code의 소스 제어 탭이나 깃허브 데스크톱처럼 말이죠.) 하지만 백엔드 개발을 하거나, 특히 리눅스 서버 환경을 다루기 시작하면 상황이 달라집니다. 선"
 date: 2025-10-27
-category: "이관 글"
+category: "서버 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/33"
 ---

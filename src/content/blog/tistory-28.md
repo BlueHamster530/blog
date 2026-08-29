@@ -3,7 +3,7 @@ title: "웹 개발자 필수 상식! HTTP 상태 코드 총정리"
 slug: "tistory-28"
 description: "HTTP 상태 코드: 웹 통신의 핵심 신호 🌐HTTP 상태 코드는 클라이언트(예: 웹 브라우저)가 서버에 요청을 보냈을 때, 서버가 그 요청을 어떻게 처리했는지를 알려주는 세 자리 숫자 코드입니다. 이 코드를 통해 개발자와 사용자는 웹 페이지나 애플리케이션이 정상적으로 작동하는지, 혹은"
 date: 2025-09-29
-category: "이관 글"
+category: "웹 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/28"
 thumbnail: "/blog/images/tistory-28/img1.jpg"

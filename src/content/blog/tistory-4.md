@@ -3,7 +3,7 @@ title: "c++함수 오버로딩"
 slug: "tistory-4"
 description: "c++함수 오버로딩 함수의 이름이 같으면 호출할 때 문제가 발생한다. 다만 각 함수의 매개변수가 다르면 문제가 발생하지 않는다. 사용한 매개변수와 일치한 매개변수를 가진 함수를 불러오기 때문이다. 함수의 오버로딩이 가능하려면 매개변수의 선언이(자료형 또는 개수가) 달라야 한다. int "
 date: 2021-12-26
-category: "이관 글"
+category: "C++"
 tags: [이관]
 source: "https://bluehamster.tistory.com/4"
 ---

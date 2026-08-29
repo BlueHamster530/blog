@@ -3,7 +3,7 @@ title: "업무 흐름을 한눈에 파악하라: 칸반(Kanban) 시스템 완벽
 slug: "tistory-52"
 description: "안녕하세요.개발 프로젝트를 진행하다 보면 내가 지금 무엇을 하고 있는지, 팀원이 어떤 작업을 마쳤는지, 그리고 전체 프로젝트가 어디쯤 와 있는지 파악하기 힘들 때가 있습니다.업무가 눈에 보이지 않고 쌓이기만 하면 병목 현상이 생기고 효율이 떨어집니다. 이럴 때 가장 강력한 효과를 발휘하"
 date: 2025-12-31
-category: "이관 글"
+category: "프로젝트 관리 및 기획"
 tags: [이관]
 source: "https://bluehamster.tistory.com/52"
 thumbnail: "/blog/images/tistory-52/img1.png"

@@ -3,7 +3,7 @@ title: "[Escape from Tarkov] 타르코프 전용 엔비디아(NVIDIA) 설정법"
 slug: "tistory-47"
 description: "이스케이프 프롬 타르코프(Tarkov)를 즐기시는 분들이라면 누구나 한 번쯤 겪는 상황이 있습니다. 분명 소리는 들리는데 어두운 그림자나 칙칙한 풀숲 색깔 때문에 적을 찾지 못해 로비로 사출되는 경우입니다. 타르코프는 특유의 사실적인 그래픽 때문에 전반적으로 색감이 칙칙하고 어두운 편입"
 date: 2025-12-11
-category: "이관 글"
+category: "타르코프"
 tags: [nvidia, tarkov, 타르코프]
 source: "https://bluehamster.tistory.com/47"
 thumbnail: "/blog/images/tistory-47/img1.png"

@@ -3,7 +3,7 @@ title: "[GitHub] 오픈소스에 기여하는 법: Fork & Pull Request 실전 �
 slug: "tistory-36"
 description: "안녕하세요! 우리가 매일 사용하는 VS Code(Visual Studio Code)는 마이크로소프트가 관리하는 세계에서 가장 유명한 오픈소스 프로젝트 중 하나입니다. '오픈소스'라는 말은 누구나 코드를 보고, 사용하고, 심지어 개선에 참여(기여)할 수 있다는 뜻입니다. 하지만 막상 기여"
 date: 2025-10-31
-category: "이관 글"
+category: "GIT"
 tags: [이관]
 source: "https://bluehamster.tistory.com/36"
 ---

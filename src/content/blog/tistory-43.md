@@ -3,7 +3,7 @@ title: "[Web] 백엔드 개발의 정석, MVC 패턴 완벽 이해 (회원가입
 slug: "tistory-43"
 description: "안녕하세요. Spring, Node.js, Django 등 웹 프레임워크를 공부하다 보면 가장 먼저 마주치는 개념이 바로 MVC 패턴(Model-View-Controller)입니다. GUI 프로그램에서의 MVC와 웹 서버에서의 MVC는 기본 개념은 같지만, 실제 동작 방식에는 미묘한 차"
 date: 2025-12-02
-category: "이관 글"
+category: "웹 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/43"
 ---

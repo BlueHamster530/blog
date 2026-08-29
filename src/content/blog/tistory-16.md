@@ -3,7 +3,7 @@ title: "새로운 게임 개발(PixelierRobot)-0"
 slug: "tistory-16"
 description: "졸업도 하게 되었고 친한 후배랑 6~12개월 정도 생각하고 게임을 제작하기로 하였습니다.로봇이 주가되는 횡스크롤 액션 플랫포머 게임으로 기획하고 이제 시작합니다.도트게임으로 제작할 예정입니다만 2D로 제작하는 것이 아니라 3D로 제작 후 쉐이더를 통해 픽셀화 하려고 합니다.2D가 아닌 "
 date: 2023-01-09
-category: "이관 글"
+category: "유니티"
 tags: [이관]
 source: "https://bluehamster.tistory.com/16"
 thumbnail: "/blog/images/tistory-16/img1.png"

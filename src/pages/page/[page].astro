@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import Toolbar from '../../components/Toolbar.astro';
+import Pagination from '../../components/Pagination.astro';
+import { getSortedPosts, categoryList, url, PAGE_SIZE } from '../../lib/posts';
+
+export async function getStaticPaths() {
+  const posts = await getSortedPosts();
+  const totalPages = Math.ceil(posts.length / PAGE_SIZE);
+  // 2페이지부터 생성 (1페이지는 index.astro)
+  return Array.from({ length: Math.max(0, totalPages - 1) }, (_, i) => {
+    const page = i + 2;
+    return { params: { page: String(page) }, props: { page } };
+  });
+}
+
+const { page } = Astro.props;
+const posts = await getSortedPosts();
+const cats = categoryList(posts);
+const totalPages = Math.ceil(posts.length / PAGE_SIZE);
+const start = (page - 1) * PAGE_SIZE;
+const pagePosts = posts.slice(start, start + PAGE_SIZE);
+const hrefFor = (p: number) => (p === 1 ? url() : url(`page/${p}`));
+---
+<BaseLayout title={`글 목록 (${page}페이지) · BlueHamster 블로그`} description="개발 · AI · CS 기초를 정리하는 블로그">
+  <section class="intro">
+    <h1>글 목록</h1>
+    <p>{page} / {totalPages} 페이지 <span class="count">전체 {posts.length}개</span></p>
+  </section>
+  <Toolbar categories={cats} active="" total={posts.length} />
+  <ul class="post-list">
+    {pagePosts.map((post) => <PostCard post={post} />)}
+  </ul>
+  <Pagination current={page} total={totalPages} hrefFor={hrefFor} />
+</BaseLayout>

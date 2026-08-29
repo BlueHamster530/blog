@@ -3,7 +3,7 @@ title: "[Network] 백엔드 개발자의 필수 무기, SSH(Secure Shell) 완벽
 slug: "tistory-67"
 description: "안녕하세요. 백엔드 개발을 공부하다 보면 로컬 환경(내 컴퓨터)에서만 코드를 짜는 것이 아니라, 결국 AWS EC2 같은 원격 서버에 코드를 배포하고 운영해야 하는 시점이 옵니다. 이때 서버와 소통하기 위해 반드시 거쳐야 하는 관문이 바로 SSH입니다.브라우저 주소창에 https를 입력"
 date: 2026-01-29
-category: "이관 글"
+category: "서버 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/67"
 thumbnail: "/blog/images/tistory-67/img1.png"

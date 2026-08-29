@@ -3,7 +3,7 @@ title: "웅진 공모전 개발일지(22.08.23) - 적 관련 제작(더미 프�
 slug: "tistory-10"
 description: "새창에서 열기"
 date: 2022-08-23
-category: "이관 글"
+category: "공모전"
 tags: [이관]
 source: "https://bluehamster.tistory.com/10"
 ---

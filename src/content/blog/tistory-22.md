@@ -3,7 +3,7 @@ title: "코드잇 스프린트 node.js 6기 시작했습니다."
 slug: "tistory-22"
 description: "취업 후 1년차 까지 게임 개발을 하고회사에서 게임 팀이 사라져서 html, css, js 를 시작하고 웹 콘텐츠 제작을 하다가퇴사 후에 백엔드로 직무를 바꾸고 싶었습니다. 책을 보거나 하는 것보다 실업 급여도 받고있겠다.부트캠프로 해보자는 생각으로 여러 부트캠프를 알아보다가국비 지원에"
 date: 2025-09-18
-category: "이관 글"
+category: "코드잇 스프린트 node 백엔드 6기"
 tags: [이관]
 source: "https://bluehamster.tistory.com/22"
 thumbnail: "/blog/images/tistory-22/img1.jpg"

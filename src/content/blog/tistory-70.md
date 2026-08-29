@@ -3,7 +3,7 @@ title: "[AWS] S3 버킷 정책(JSON) 이해해보자"
 slug: "tistory-70"
 description: "안녕하세요. 프로젝트를 진행하며 이미지 업로드를 위해 AWS S3를 구축하다 보면, 프론트엔드에서 이미지가 보이지 않아 '권한 설정(Permission)'을 만지게 됩니다.구글링을 통해 'S3 전체 공개 정책'을 검색하면 아래와 같은 JSON 코드를 발견하게 되는데요.{ 'Version"
 date: 2026-02-08
-category: "이관 글"
+category: "인프라,클라우드"
 tags: [이관]
 source: "https://bluehamster.tistory.com/70"
 ---

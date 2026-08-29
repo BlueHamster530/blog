@@ -3,7 +3,7 @@ title: "[CS 기초] 웹은 어떻게 통신할까? (Request, Response, 쿼리, B
 slug: "tistory-27"
 description: "안녕하세요! 우리가 웹사이트를 보거나 앱을 사용할 때, '데이터를 불러오는 중...'이라는 메시지를 흔히 봅니다. 이 과정은 클라이언트(브라우저, 앱)가 서버(데이터가 있는 컴퓨터)에게 필요한 정보 좀 주세요!**라고 요청(Request)하고, 서버가 여기 있습니다!라고 응답(Respo"
 date: 2025-09-28
-category: "이관 글"
+category: "웹 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/27"
 ---

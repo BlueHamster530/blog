@@ -3,7 +3,7 @@ title: "[Network] 실시간 서비스, 무조건 WebSocket만 정답일까? (Web
 slug: "tistory-71"
 description: "안녕하세요.백엔드 개발을 공부하다 보면 '실시간 채팅을 구현해보자' 혹은 '주식 시세처럼 데이터가 계속 바뀌는 서비스는 어떻게 만들지?'라는 고민에 빠지게 됩니다.가장 먼저 떠오르는 기술은 단연 WebSocket입니다. 하지만 모든 실시간 서비스가 WebSocket으로만 만들어지는 것은"
 date: 2026-02-09
-category: "이관 글"
+category: "서버 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/71"
 thumbnail: "/blog/images/tistory-71/img1.png"

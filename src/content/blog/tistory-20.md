@@ -3,7 +3,7 @@ title: "럭비 클럽 / 백준"
 slug: "tistory-20"
 description: "https://www.acmicpc.net/problem/2083 럭비 클럽 (2083) / 백준 using System;public class CodeCanvas{ public static void Main(string[] args) { List list = new List(); wh"
 date: 2025-09-18
-category: "이관 글"
+category: "코딩테스트"
 tags: [이관]
 source: "https://bluehamster.tistory.com/20"
 ---

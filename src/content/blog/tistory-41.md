@@ -3,7 +3,7 @@ title: "[Database] 웹 서비스에서 관계형 데이터베이스(RDB)를 사�
 slug: "tistory-41"
 description: "안녕하세요.웹 개발을 시작하면 가장 먼저 배우는 데이터베이스는 보통 MySQL, Oracle, PostgreSQL과 같은 관계형 데이터베이스(RDB)입니다. 최근에는 다양한 형태의 데이터베이스가 등장했지만, 여전히 금융, 쇼핑몰, 예약 시스템 등 중요한 데이터를 다루는 웹 서비스의 90"
 date: 2025-11-24
-category: "이관 글"
+category: "웹 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/41"
 ---

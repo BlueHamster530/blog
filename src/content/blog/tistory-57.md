@@ -3,7 +3,7 @@ title: "[Web] 실시간 통신의 핵심, 웹소켓(WebSocket) 완벽 정리"
 slug: "tistory-57"
 description: "안녕하세요. 오늘은 웹 개발, 특히 백엔드 개발에서 실시간 서비스를 구현할 때 필수적으로 알아야 할 웹소켓(WebSocket)에 대해 정리해 보려고 합니다. 우리가 매일 사용하는 카카오톡, 디스코드 같은 메신저나 빗썸 같은 가상화폐 거래소의 실시간 시세창, 그리고 실시간 협업 도구(Fi"
 date: 2026-01-15
-category: "이관 글"
+category: "웹 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/57"
 thumbnail: "/blog/images/tistory-57/img1.png"

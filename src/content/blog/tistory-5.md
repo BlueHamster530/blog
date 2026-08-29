@@ -3,7 +3,7 @@ title: "c++ 매크로 함수, 인라인(inline)함수"
 slug: "tistory-5"
 description: "c++ 매크로 함수, 인라인(inline)함수 매크로 함수의 장점-> 일반적인 함수에 비해 실행속도가 빨라진다. 매크로 함수의 단점-> 복잡한 함수는 매크로의 형태로 정의하는데 한계가 있다. #include #define SQUARE(x) ((x)*(x)) void main() { st"
 date: 2021-12-26
-category: "이관 글"
+category: "C++"
 tags: [이관]
 source: "https://bluehamster.tistory.com/5"
 ---

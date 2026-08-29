@@ -3,7 +3,7 @@ title: "[DB] LIKE 검색(%검색어%)은 왜 느릴까? 인덱스의 원리와 �
 slug: "tistory-49"
 description: "안녕하세요. 백엔드 개발자로 성장하기 위해 데이터베이스(DB)를 공부하다 보면 가장 많이 듣는 조언이 쿼리가 느리면 인덱스(Index)를 걸어라입니다. 하지만 무턱대고 인덱스를 맹신하면 오히려 성능 저하를 겪을 수도 있습니다. 특히 게시판 검색 기능 등을 구현할 때 자주 사용하는 LIK"
 date: 2025-12-12
-category: "이관 글"
+category: "웹 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/49"
 thumbnail: "/blog/images/tistory-49/img1.png"

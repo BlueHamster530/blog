@@ -3,7 +3,7 @@ title: "[CS 기초] 절차지향 vs 객체지향 (OOP) 그리고 프로미스(Pr
 slug: "tistory-30"
 description: "안녕하세요! 개발자로서 탄탄한 기본기를 갖추는 것은 매우 중요합니다. 수많은 개념이 있지만, 오늘은 그중에서도 '프로그램을 어떻게 설계할 것인가'에 대한 프로그래밍 패러다임(절차지향 vs 객체지향)과, '비동기 작업을 어떻게 처리할 것인가'에 대한 프로미스(Promise)의 핵심 개념을"
 date: 2025-10-13
-category: "이관 글"
+category: "JS"
 tags: [이관]
 source: "https://bluehamster.tistory.com/30"
 ---

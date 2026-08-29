@@ -3,7 +3,7 @@ title: "[DB] 데이터베이스의 수호자와 타임머신: 무결성과 마�
 slug: "tistory-69"
 description: "안녕하세요. 백엔드 개발을 공부하다 보면 데이터베이스(DB)가 단순히 데이터를 저장하는 창고가 아니라는 것을 깨닫게 됩니다.DB는 데이터가 엉키지 않게 감시하는 엄격한 규칙(무결성)을 가지고 있고, DB의 변경 사항을 역사처럼 기록하는 관리 시스템(마이그레이션)을 가지고 있습니다.오늘은"
 date: 2026-02-02
-category: "이관 글"
+category: "서버 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/69"
 thumbnail: "/blog/images/tistory-69/img1.png"

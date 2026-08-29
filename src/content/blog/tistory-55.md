@@ -3,7 +3,7 @@ title: "[Dev] AI를 단순 검색기가 아닌 '동료'로 쓰는 법: 실전 Sw
 slug: "tistory-55"
 description: "안녕하세요. 백엔드 개발을 공부하며 프로젝트를 진행하다 보면 반복적이고 시간 소모적인 작업에 부딪힐 때가 많습니다. 그중 하나가 바로 API 명세서인 Swagger(스웨거) 작성입니다. 저는 최근 프로젝트에서 생성형 AI를 활용해 이 작업을 효율화했습니다. 단순히 '이거 만들어줘'라고 "
 date: 2026-01-13
-category: "이관 글"
+category: "AI"
 tags: [이관]
 source: "https://bluehamster.tistory.com/55"
 thumbnail: "/blog/images/tistory-55/img1.png"

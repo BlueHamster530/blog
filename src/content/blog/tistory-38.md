@@ -3,7 +3,7 @@ title: "[Express] 자식(하위) 라우터에서 부모 req.params가 undefined�
 slug: "tistory-38"
 description: "안녕하세요! Node.js Express로 REST API를 설계하다 보면, 자연스럽게 중첩된(Nested) 경로를 구성할 때가 많습니다. 예를 들어, 특정 사용자의 게시글을 다루기 위해 /users/:userId/posts와 같은 API를 설계하는 것은 매우 일반적인 패턴입니다. 하지"
 date: 2025-11-06
-category: "이관 글"
+category: "웹 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/38"
 ---

@@ -3,7 +3,7 @@ title: "설탕 배달 (백준) / C#"
 slug: "tistory-26"
 description: "https://www.acmicpc.net/problem/2839 문제상근이는 요즘 설탕공장에서 설탕을 배달하고 있다. 상근이는 지금 사탕가게에 설탕을 정확하게 N킬로그램을 배달해야 한다. 설탕공장에서 만드는 설탕은 봉지에 담겨져 있다. 봉지는 3킬로그램 봉지와 5킬로그램 봉지가 있다."
 date: 2025-09-26
-category: "이관 글"
+category: "코딩테스트"
 tags: [이관]
 source: "https://bluehamster.tistory.com/26"
 ---

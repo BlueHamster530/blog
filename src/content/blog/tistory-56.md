@@ -3,7 +3,7 @@ title: "[회고] 중고차 계약 관리 서비스: 백엔드 안정화와 풀�
 slug: "tistory-56"
 description: "안녕하세요. 'API가 200 OK를 뱉는다고 끝난 게 아니다.'이번 중고차 계약 관리 서비스 프로젝트를 진행하며 뼈저리게 느낀 점입니다. 백엔드 개발자로서 단순히 서버 로직만 구현하는 것을 넘어, 클라이언트(프론트엔드)와의 연동 과정에서 발생하는 문제를 직접 디버깅하고 해결하며 서비스"
 date: 2026-01-14
-category: "이관 글"
+category: "코드잇 스프린트 node 백엔드 6기"
 tags: [이관]
 source: "https://bluehamster.tistory.com/56"
 thumbnail: "/blog/images/tistory-56/img1.jpg"

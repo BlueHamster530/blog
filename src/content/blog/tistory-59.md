@@ -3,7 +3,7 @@ title: "[Web] 개발자를 괴롭히는 빨간 에러, CORS 완벽 이해하기"
 slug: "tistory-59"
 description: "안녕하세요. 웹 개발 프로젝트를 진행하다 보면, 특히 프론트엔드(React, Vue 등)와 백엔드(Spring, Node.js 등)의 서버 포트를 다르게 띄우고 연동할 때 콘솔창에서 시뻘건 에러 메시지를 마주하게 됩니다. Access to XMLHttpRequest at '...' fr"
 date: 2026-01-19
-category: "이관 글"
+category: "웹 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/59"
 thumbnail: "/blog/images/tistory-59/img1.png"

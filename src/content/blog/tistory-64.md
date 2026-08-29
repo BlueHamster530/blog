@@ -3,7 +3,7 @@ title: "[Jest] 테스트의 정찰병, Spy(spyOn) 완벽 이해하기 (vs jest.f
 slug: "tistory-64"
 description: "안녕하세요. 테스트 코드를 작성하다 보면 필연적으로 '가짜(Mock)'를 사용해야 할 때가 옵니다. 그런데 문서를 찾아보면 jest.fn()도 있고 jest.spyOn()도 있어서 도대체 무엇을 써야 할지 헷갈리는 경우가 많습니다. 오늘은 기존 객체를 건드리지 않고 몰래 정보를 빼내거나"
 date: 2026-01-21
-category: "이관 글"
+category: "서버 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/64"
 thumbnail: "/blog/images/tistory-64/img1.png"

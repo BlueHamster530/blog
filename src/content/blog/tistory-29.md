@@ -3,7 +3,7 @@ title: "[nodejs]res의 body값 출력 시 Promise{<pending>} 일 때"
 slug: "tistory-29"
 description: "처음 fetch를 활용할때 위코드와 같이 첫 번째 then 체인에서 body의 값을 확인하고자 하였으나출력값이 Promise { } 으로 표시되었습니다.export async function getArticle(articleId) { return fetch(`---------------"
 date: 2025-10-01
-category: "이관 글"
+category: "이슈 해결 기록"
 tags: [이관]
 source: "https://bluehamster.tistory.com/29"
 thumbnail: "/blog/images/tistory-29/img1.png"

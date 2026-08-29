@@ -3,7 +3,7 @@ title: "[Database] 데이터의 주민등록번호와 연결고리: Primary Key(
 slug: "tistory-40"
 description: "안녕하세요.데이터베이스, 특히 관계형 데이터베이스(RDB)를 공부하다 보면 가장 먼저 접하게 되는 두 가지 핵심 개념이 있습니다. 바로 Primary Key(기본키)와 Foreign Key(외래키)입니다.이 두 키(Key)는 테이블 속에 저장된 수많은 데이터 중에서 특정 데이터를 정확히"
 date: 2025-11-24
-category: "이관 글"
+category: "웹 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/40"
 ---

@@ -3,7 +3,7 @@ title: "늦은 웅진 씽크빅 게임개발 챌린지 후기"
 slug: "tistory-11"
 description: "끝난지 한달만에 업로드하는 웅진 씽크빅 게임개발 챌린지 후기.약 반년동안 친구들과 열심히 노력했고 우수상이라는 기분 좋은 결과를 받을 수 있어서 매우 좋네요.수상 전 까지는 더 높은 결과를 기대하지 않았다면은 거짓말 이겠지만 다른 팀들의 작품을 보고나니 스스로 아직 배워야할 일이 많다고"
 date: 2023-01-09
-category: "이관 글"
+category: "공모전"
 tags: [이관]
 source: "https://bluehamster.tistory.com/11"
 thumbnail: "/blog/images/tistory-11/img1.jpg"

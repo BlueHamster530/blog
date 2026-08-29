@@ -3,7 +3,7 @@ title: "[DB] WHERE 절 없는 UPDATE가 쏘아 올린 작은 공 (feat. 서버 �
 slug: "tistory-73"
 description: "안녕하세요!오늘도 여러분의 삽질 시간을 줄여드리기 위해 키보드를 잡은 개발자입니다. 👨‍💻여러분, 혹시 새벽에 운영 DB에 접속해서 쿼리를 날려본 적 있으신가요? 오늘 소개할 이야기는 유튜브 채널 '코딩하는기술사'님의 20년 전 흑역사에서 가져온, 아주 무시무시하고도 뼈아픈 교훈입니다."
 date: 2026-04-16
-category: "이관 글"
+category: "서버 개발"
 tags: [DB락(Lock), mysql, 데이터베이스, 트랜잭션]
 source: "https://bluehamster.tistory.com/73"
 thumbnail: "/blog/images/tistory-73/img1.png"

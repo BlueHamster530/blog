@@ -3,7 +3,7 @@ title: "[VS Code] 빌드 과정 귀찮을 때 쓰는 TypeScript 디버깅 설정
 slug: "tistory-54"
 description: "안녕하세요. Node.js와 TypeScript로 백엔드 개발을 공부하다 보면 디버깅 환경을 세팅하는 게 꽤나 번거롭습니다. 보통은 tsc로 빌드를 해서 자바스크립트 파일로 만든 뒤에 실행하거나, ts-node 등을 사용하곤 합니다. 하지만 프로젝트 규모가 커지거나 빠르게 로직만 확인하"
 date: 2026-01-13
-category: "이관 글"
+category: "이슈 해결 기록"
 tags: [이관]
 source: "https://bluehamster.tistory.com/54"
 thumbnail: "/blog/images/tistory-54/img1.png"

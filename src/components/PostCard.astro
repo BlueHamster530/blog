@@ -1,0 +1,24 @@
+---
+import type { Post } from '../lib/posts';
+import { url, catSlug, fmtDate } from '../lib/posts';
+
+interface Props { post: Post }
+const { post } = Astro.props;
+const { thumbnail, title, description, category, tags, date } = post.data;
+---
+<li class="post-item">
+  <a class="post-link" href={url(post.id)}>
+    {thumbnail && <div class="thumb"><img src={thumbnail} alt="" loading="lazy" /></div>}
+    <div class="post-body">
+      <div class="meta">
+        {fmtDate(date)}
+        {category && <> · {category}</>}
+      </div>
+      <h2 class="title">{title}</h2>
+      {description && <p class="desc">{description}</p>}
+      {tags && tags.length > 0 && (
+        <div class="tags">{tags.slice(0, 4).map((t) => <span class="tag">#{t}</span>)}</div>
+      )}
+    </div>
+  </a>
+</li>

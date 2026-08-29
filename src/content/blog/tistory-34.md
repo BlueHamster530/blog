@@ -3,7 +3,7 @@ title: "[Node.js / Express] 헷갈리는 app.use()와 app.all() - 차이점과 �
 slug: "tistory-34"
 description: "안녕하세요! Node.js Express 프레임워크로 서버를 개발하다 보면 app.use()와 app.all()을 만나게 됩니다. 두 메서드 모두 '모든'이라는 뉘앙스를 풍겨서 그 차이에 대해 명확하게 기록하고자 글을 작성해 봅니다. 이 둘은 경로 일치 방식과 주요 사용 목적에서 명확한"
 date: 2025-10-31
-category: "이관 글"
+category: "웹 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/34"
 ---

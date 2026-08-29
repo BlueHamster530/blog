@@ -3,7 +3,7 @@ title: "[AWS] 요금 폭탄 피하는 마법의 지팡이, AWS Lightsail 완벽 
 slug: "tistory-76"
 description: "'AWS 클라우드에 입문하고 싶지만 복잡한 설정과 예측 불가능한 요금 때문에 망설이고 계신가요? 본 글에서는 초보자도 쉽게 사용할 수 있는 가상 사설 서버(VPS)인 AWS Lightsail의 개념과 장단점을 알아봅니다. 더불어 EC2, DigitalOcean 등 유사 서비스와의 비교를"
 date: 2026-05-06
-category: "이관 글"
+category: "서버 개발"
 tags: [AWS, Lightsail, 백엔드배포, 인프라구축, 클라우드서버]
 source: "https://bluehamster.tistory.com/76"
 thumbnail: "/blog/images/tistory-76/img1.png"

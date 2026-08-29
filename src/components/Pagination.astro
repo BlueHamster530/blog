@@ -1,0 +1,20 @@
+---
+interface Props {
+  current: number;
+  total: number;
+  hrefFor: (page: number) => string;
+}
+const { current, total, hrefFor } = Astro.props;
+const pages = Array.from({ length: total }, (_, i) => i + 1);
+---
+{total > 1 && (
+  <nav class="pagination" aria-label="페이지">
+    {current > 1 && <a class="pg" href={hrefFor(current - 1)}>← 이전</a>}
+    {pages.map((p) =>
+      p === current
+        ? <span class="pg on">{p}</span>
+        : <a class="pg" href={hrefFor(p)}>{p}</a>
+    )}
+    {current < total && <a class="pg" href={hrefFor(current + 1)}>다음 →</a>}
+  </nav>
+)}

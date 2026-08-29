@@ -3,7 +3,7 @@ title: "부호 / 백준 (C#)"
 slug: "tistory-24"
 description: "https://www.acmicpc.net/problem/1247 문제N개의 정수가 주어지면, 이 정수들의 합 S의 부호를 구하는 프로그램을 작성하시오.입력총 3개의 테스트 셋이 주어진다. 각 테스트 셋의 첫째 줄에는 N(1 ≤ N ≤ 100,000)이 주어지고, 둘째 줄부터 N개의 줄"
 date: 2025-09-22
-category: "이관 글"
+category: "코딩테스트"
 tags: [이관]
 source: "https://bluehamster.tistory.com/24"
 ---

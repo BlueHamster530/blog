@@ -3,7 +3,7 @@ title: "[백엔드 공부] 코드를 분리해야 하는 이유: 레이어드 �
 slug: "tistory-66"
 description: "백엔드 개발을 공부하면서 가장 먼저 부딪히는 벽 중 하나는 '도대체 이 코드를 어디에 써야 하는가?'입니다. 단순히 main 함수나 하나의 파일에 모든 로직을 때려 넣으면 당장은 편하지만, 프로젝트가 조금만 커져도 유지보수가 불가능해집니다.오늘은 백엔드 시스템을 설계할 때 가장 기본이 "
 date: 2026-01-26
-category: "이관 글"
+category: "서버 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/66"
 thumbnail: "/blog/images/tistory-66/img1.png"

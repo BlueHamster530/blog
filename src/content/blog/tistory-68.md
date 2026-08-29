@@ -3,7 +3,7 @@ title: "[AWS] 서버 접속이 안 되나요? 인바운드/아웃바운드 규�
 slug: "tistory-68"
 description: "안녕하세요. 백엔드 개발을 공부하며 AWS EC2 같은 클라우드 서버를 처음 띄웠을 때, 가장 먼저 마주치는 장벽이 바로 '접속이 안 돼요'입니다.분명 서버는 켜져 있는데, 브라우저로 접속하면 뺑글뺑글 돌기만 하고, 터미널에서 SSH 접속을 시도해도 묵묵부답인 상황. 이럴 때 90% 이"
 date: 2026-01-29
-category: "이관 글"
+category: "서버 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/68"
 thumbnail: "/blog/images/tistory-68/img1.png"

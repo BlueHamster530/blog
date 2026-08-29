@@ -3,7 +3,7 @@ title: "TotheValhalla 개발(졸업작품2)"
 slug: "tistory-15"
 description: "22년도 졸업작품으로 제작한 게임2제목: 투더발할라장르: 2~4인 로컬 멀티플레이 미니게임설명: 간단한 졸업작품 겸 로컬 미니게임제작 경험을 위해 제작한 게임패드를 통한 2~4인 로컬 멀티플레이 미니게임-----------------------------------------------"
 date: 2023-01-09
-category: "이관 글"
+category: "유니티"
 tags: [이관]
 source: "https://bluehamster.tistory.com/15"
 thumbnail: "/blog/images/tistory-15/img1.png"

@@ -3,7 +3,7 @@ title: "[Node.js] 백엔드 개발자의 안전장치: Jest로 시작하는 테�
 slug: "tistory-60"
 description: "안녕하세요. 백엔드 API를 개발하다 보면 필연적으로 마주치는 상황이 있습니다. 기능을 하나 만들고 나서 Postman을 켜고, 로그인 토큰을 넣고, 요청을 보내서 응답이 제대로 오는지 확인하는 과정입니다. 더 큰 문제는 코드를 수정할 때입니다. 기능 개선을 위해 코드 한 줄을 고쳤을 "
 date: 2026-01-20
-category: "이관 글"
+category: "서버 개발"
 tags: [이관]
 source: "https://bluehamster.tistory.com/60"
 thumbnail: "/blog/images/tistory-60/img1.png"
