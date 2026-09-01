@@ -1,10 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Toolbar from '../components/Toolbar.astro';
-import { getSortedPosts, categoryList, url, fmtDate } from '../lib/posts';
+import { getSortedPosts, url, fmtDate } from '../lib/posts';
 
 const posts = await getSortedPosts();
-const cats = categoryList(posts);
 const index = posts.map((p) => ({
   title: p.data.title,
   desc: p.data.description || '',
@@ -28,8 +26,6 @@ const index = posts.map((p) => ({
 
   <p id="status" class="search-status"></p>
   <ul class="post-list" id="results"></ul>
-
-  <Toolbar categories={cats} active="" total={posts.length} />
 
   <script type="application/json" id="search-index" set:html={JSON.stringify(index)} />
   <script>

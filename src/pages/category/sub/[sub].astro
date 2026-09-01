@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PostCard from '../../../components/PostCard.astro';
+import { getSortedPosts, subCategoryList, catSlug, groupOf, url } from '../../../lib/posts';
+
+export async function getStaticPaths() {
+  const posts = await getSortedPosts();
+  return subCategoryList(posts).map((s) => ({
+    params: { sub: s.slug },
+    props: {
+      name: s.name,
+      slug: s.slug,
+      posts: posts.filter((p) => catSlug((p.data.category || '기타').trim() || '기타') === s.slug),
+    },
+  }));
+}
+
+const { name, slug, posts } = Astro.props;
+const group = groupOf(posts[0]?.data.category);
+---
+<BaseLayout
+  title={`${name} · BlueHamster 블로그`}
+  description={`${name} 카테고리 글 목록`}
+  activeSub={slug}
+>
+  <nav class="crumb">
+    <a href={url()}>전체</a>
+    <span>›</span>
+    <a href={url(`category/${catSlug(group)}`)}>{group}</a>
+    <span>›</span>
+    <strong>{name}</strong>
+  </nav>
+  <section class="intro">
+    <h1>{name}</h1>
+    <p><span class="count">{posts.length}개</span>의 글</p>
+  </section>
+  <ul class="post-list">
+    {posts.map((post) => <PostCard post={post} />)}
+  </ul>
+</BaseLayout>

@@ -1,12 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PostCard from '../components/PostCard.astro';
-import Toolbar from '../components/Toolbar.astro';
 import Pagination from '../components/Pagination.astro';
-import { getSortedPosts, categoryList, url, PAGE_SIZE } from '../lib/posts';
+import { getSortedPosts, url, PAGE_SIZE } from '../lib/posts';
 
 const posts = await getSortedPosts();
-const cats = categoryList(posts);
 const totalPages = Math.ceil(posts.length / PAGE_SIZE);
 const pagePosts = posts.slice(0, PAGE_SIZE);
 const hrefFor = (p: number) => (p === 1 ? url() : url(`page/${p}`));
@@ -16,7 +14,6 @@ const hrefFor = (p: number) => (p === 1 ? url() : url(`page/${p}`));
     <h1>글 목록</h1>
     <p>만들면서 배운 것들 — 개발 · AI · CS 기초를 정리합니다. <span class="count">{posts.length}개</span></p>
   </section>
-  <Toolbar categories={cats} active="" total={posts.length} />
   <ul class="post-list">
     {pagePosts.map((post) => <PostCard post={post} />)}
   </ul>

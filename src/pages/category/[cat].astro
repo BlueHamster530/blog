@@ -1,8 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostCard from '../../components/PostCard.astro';
-import Toolbar from '../../components/Toolbar.astro';
-import { getSortedPosts, categoryList, catSlug, groupOf } from '../../lib/posts';
+import { getSortedPosts, categoryList, catSlug, groupOf, url } from '../../lib/posts';
 
 export async function getStaticPaths() {
   const posts = await getSortedPosts();
@@ -18,15 +17,17 @@ export async function getStaticPaths() {
 }
 
 const { name, slug, posts } = Astro.props;
-const allPosts = await getSortedPosts();
-const cats = categoryList(allPosts);
 ---
-<BaseLayout title={`${name} · BlueHamster 블로그`} description={`${name} 카테고리 글 목록`}>
+<BaseLayout title={`${name} · BlueHamster 블로그`} description={`${name} 카테고리 글 목록`} activeGroup={slug}>
+  <nav class="crumb">
+    <a href={url()}>전체</a>
+    <span>›</span>
+    <strong>{name}</strong>
+  </nav>
   <section class="intro">
     <h1>{name}</h1>
     <p><span class="count">{posts.length}개</span>의 글</p>
   </section>
-  <Toolbar categories={cats} active={slug} total={allPosts.length} />
   <ul class="post-list">
     {posts.map((post) => <PostCard post={post} />)}
   </ul>

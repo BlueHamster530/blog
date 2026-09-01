@@ -1,11 +1,21 @@
 ---
 import '../styles/global.css';
+import Sidebar from '../components/Sidebar.astro';
 
 interface Props {
   title: string;
   description?: string;
+  sidebar?: boolean;
+  activeGroup?: string;
+  activeSub?: string;
 }
-const { title, description = '' } = Astro.props;
+const {
+  title,
+  description = '',
+  sidebar = true,
+  activeGroup = '',
+  activeSub = '',
+} = Astro.props;
 const rawBase = import.meta.env.BASE_URL;
 const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
 ---
@@ -30,9 +40,12 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
         </nav>
       </div>
     </header>
-    <main class="wrap">
-      <slot />
-    </main>
+    <div class={`wrap page-grid ${sidebar ? '' : 'no-side'}`}>
+      <main class="content">
+        <slot />
+      </main>
+      {sidebar && <Sidebar activeGroup={activeGroup} activeSub={activeSub} />}
+    </div>
     <footer class="site">
       <div class="wrap">© BlueHamster · Astro + GitHub Pages로 자동 발행</div>
     </footer>

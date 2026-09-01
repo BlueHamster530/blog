@@ -1,0 +1,90 @@
+---
+import { getSortedPosts, categoryTree, tagList, url, fmtDate } from '../lib/posts';
+
+interface Props {
+  activeGroup?: string; // 대분류 슬러그
+  activeSub?: string;   // 세부 카테고리 슬러그
+}
+const { activeGroup = '', activeSub = '' } = Astro.props;
+
+const posts = await getSortedPosts();
+const tree = categoryTree(posts);
+const recent = posts.slice(0, 5);
+const tags = tagList(posts, 20);
+const isAll = !activeGroup && !activeSub;
+---
+<aside class="sidebar">
+  <section class="side-card profile">
+    <div class="avatar" aria-hidden="true">🐹</div>
+    <div>
+      <p class="pf-name">BlueHamster</p>
+      <p class="pf-desc">만들면서 배운 것들 — 개발 · AI · CS 기초</p>
+      <p class="pf-stat"><strong>{posts.length}</strong>개의 글</p>
+    </div>
+  </section>
+
+  <section class="side-card">
+    <h2 class="side-title">검색</h2>
+    <form class="search-box" action={url('search')} method="get" role="search">
+      <input type="search" name="q" placeholder="글 검색…" aria-label="글 검색" />
+      <button type="submit" aria-label="검색">🔍</button>
+    </form>
+  </section>
+
+  <section class="side-card">
+    <h2 class="side-title">카테고리</h2>
+    <ul class="cat-tree">
+      <li>
+        <a class={`cat-all ${isAll ? 'on' : ''}`} href={url()}>
+          전체 글<span class="cnt">{posts.length}</span>
+        </a>
+      </li>
+      {tree.map((g) => (
+        <li>
+          <details class="cat-node" open={activeGroup === g.slug || g.subs.some((s) => s.slug === activeSub)}>
+            <summary class={activeGroup === g.slug ? 'on' : ''}>
+              {g.name}<span class="cnt">{g.count}</span>
+            </summary>
+            <ul class="cat-subs">
+              <li>
+                <a class={`cat-sub whole ${activeGroup === g.slug ? 'on' : ''}`} href={url(`category/${g.slug}`)}>
+                  전체 보기<span class="cnt">{g.count}</span>
+                </a>
+              </li>
+              {g.subs.map((s) => (
+                <li>
+                  <a class={`cat-sub ${activeSub === s.slug ? 'on' : ''}`} href={url(`category/sub/${s.slug}`)}>
+                    {s.name}<span class="cnt">{s.count}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </details>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="side-card">
+    <h2 class="side-title">최근 글</h2>
+    <ul class="recent">
+      {recent.map((p) => (
+        <li>
+          <a href={url(p.id)}>
+            <span class="rc-title">{p.data.title}</span>
+            <span class="rc-date">{fmtDate(p.data.date)}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="side-card">
+    <h2 class="side-title">태그</h2>
+    <div class="tag-cloud">
+      {tags.map((t) => (
+        <a class="tag" href={`${url('search')}?q=${encodeURIComponent(t.name)}`}>#{t.name}</a>
+      ))}
+    </div>
+  </section>
+</aside>

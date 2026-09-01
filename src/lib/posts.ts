@@ -71,6 +71,76 @@ export function categoryList(posts: Post[]): CatInfo[] {
     });
 }
 
+export interface SubInfo {
+  name: string;
+  slug: string;
+  count: number;
+}
+
+export interface TreeNode extends CatInfo {
+  subs: SubInfo[];
+}
+
+/** 세부 카테고리 목록 (슬러그 기준 중복 제거) */
+export function subCategoryList(posts: Post[]): SubInfo[] {
+  const m = new Map<string, SubInfo>();
+  for (const p of posts) {
+    const name = (p.data.category || '기타').trim() || '기타';
+    const slug = catSlug(name);
+    const cur = m.get(slug);
+    if (cur) cur.count++;
+    else m.set(slug, { name, slug, count: 1 });
+  }
+  return [...m.values()].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'ko'));
+}
+
+/** 사이드바용 카테고리 트리 — 대분류 아래에 세부 카테고리를 매단다 */
+export function categoryTree(posts: Post[]): TreeNode[] {
+  const groups = new Map<string, Map<string, SubInfo>>();
+  for (const p of posts) {
+    const g = groupOf(p.data.category);
+    const name = (p.data.category || '기타').trim() || '기타';
+    const slug = catSlug(name);
+    if (!groups.has(g)) groups.set(g, new Map());
+    const subs = groups.get(g)!;
+    const cur = subs.get(slug);
+    if (cur) cur.count++;
+    else subs.set(slug, { name, slug, count: 1 });
+  }
+  return [...groups.entries()]
+    .map(([name, subs]) => ({
+      name,
+      slug: catSlug(name),
+      count: [...subs.values()].reduce((a, b) => a + b.count, 0),
+      subs: [...subs.values()].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'ko')),
+    }))
+    .sort((a, b) => {
+      const ia = GROUP_ORDER.indexOf(a.name);
+      const ib = GROUP_ORDER.indexOf(b.name);
+      return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+    });
+}
+
+export interface TagInfo {
+  name: string;
+  count: number;
+}
+
+/** 많이 쓰인 순 태그 목록 */
+export function tagList(posts: Post[], limit = 24): TagInfo[] {
+  const m = new Map<string, number>();
+  for (const p of posts) {
+    for (const raw of p.data.tags || []) {
+      const t = String(raw).trim();
+      if (t) m.set(t, (m.get(t) || 0) + 1);
+    }
+  }
+  return [...m.entries()]
+    .map(([name, count]) => ({ name, count }))
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'ko'))
+    .slice(0, limit);
+}
+
 export function fmtDate(d: Date): string {
   return d.toISOString().slice(0, 10);
 }

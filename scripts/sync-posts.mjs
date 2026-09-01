@@ -63,6 +63,8 @@ async function copyImages(imagesDir, slug) {
   const files = await readdir(imagesDir);
   let n = 0;
   for (const f of files) {
+    // 이미지 파일만 발행한다 (생성 실패 기록인 *.error.txt 등은 제외)
+    if (!/\.(png|jpe?g|webp|gif|avif|svg)$/i.test(f)) continue;
     const src = path.join(imagesDir, f);
     if ((await stat(src)).isFile()) {
       await copyFile(src, path.join(dest, f));
